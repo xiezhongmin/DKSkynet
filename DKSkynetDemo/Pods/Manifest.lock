@@ -1,0 +1,56 @@
+PODS:
+  - DKAPMMonitor (0.0.1):
+    - DKKit
+  - DKKit (0.1.0)
+  - DKSkynet (0.0.1):
+    - DKAPMMonitor
+    - DKKit
+    - DKSkynet/Core (= 0.0.1)
+    - Masonry
+    - SDWebImage
+  - DKSkynet/Core (0.0.1):
+    - DKAPMMonitor
+    - DKKit
+    - Masonry
+    - SDWebImage
+  - Masonry (1.1.0)
+  - SDWebImage (5.12.5):
+    - SDWebImage/Core (= 5.12.5)
+  - SDWebImage/Core (5.12.5)
+
+DEPENDENCIES:
+  - DKAPMMonitor (from `https://github.com/xiezhongmin/DKMonitor.git`)
+  - DKKit (from `https://github.com/xiezhongmin/DKKit.git`)
+  - DKSkynet (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  DKAPMMonitor:
+    :git: https://github.com/xiezhongmin/DKMonitor.git
+  DKKit:
+    :git: https://github.com/xiezhongmin/DKKit.git
+  DKSkynet:
+    :path: "../"
+
+CHECKOUT OPTIONS:
+  DKAPMMonitor:
+    :commit: 9a8af5193f5eb1a248811c781c625882954b7daf
+    :git: https://github.com/xiezhongmin/DKMonitor.git
+  DKKit:
+    :commit: fcabcfaa6732d6706f03a10117ab1a579d4dcb0c
+    :git: https://github.com/xiezhongmin/DKKit.git
+
+SPEC CHECKSUMS:
+  DKAPMMonitor: 29aff5fb416d8e3faee02f7af69a17c6b14536a1
+  DKKit: 4b08a83f5464ce4d4c9134e3da5d094bc1cfa17f
+  DKSkynet: 369443f26a760dbfcb025cd8aafaf5ad49b35426
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SDWebImage: 0905f1b7760fc8ac4198cae0036600d67478751e
+
+PODFILE CHECKSUM: 4af7fc33240dc40a5dff2fe9beb2902e9a488de5
+
+COCOAPODS: 1.11.2

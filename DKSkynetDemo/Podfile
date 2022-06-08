@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'DKSkynetDemo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+
+  # Pods for DKSkynetDemo
+
+  pod 'DKSkynet', :path=>'../'
+  pod 'DKKit', :git=>'https://github.com/xiezhongmin/DKKit.git'
+  pod 'DKAPMMonitor', :git=>'https://github.com/xiezhongmin/DKMonitor.git'
+
+  target 'DKSkynetDemoTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'DKSkynetDemoUITests' do
+    # Pods for testing
+  end
+
+end

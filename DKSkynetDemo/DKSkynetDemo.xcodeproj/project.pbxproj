@@ -1,0 +1,916 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F87EF623D11376124CE321D /* libPods-DKSkynetDemo-DKSkynetDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D72DEFCF31F0DF5FC8D50751 /* libPods-DKSkynetDemo-DKSkynetDemoUITests.a */; };
+		2395445E4F11C7697E559767 /* libPods-DKSkynetDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 656B295448276C43141FC363 /* libPods-DKSkynetDemoTests.a */; };
+		84A356E82844B703008CF80F /* DKSettingPlugin1.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A356E72844B703008CF80F /* DKSettingPlugin1.m */; };
+		84A356ED2844BC02008CF80F /* DKSettingPlugin2.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A356EC2844BC02008CF80F /* DKSettingPlugin2.m */; };
+		84A356F02844C2F3008CF80F /* DKSettingPlugin3.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A356EF2844C2F3008CF80F /* DKSettingPlugin3.m */; };
+		84A356F32844C2FD008CF80F /* DKSettingPlugin4.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A356F22844C2FD008CF80F /* DKSettingPlugin4.m */; };
+		84A356F62844C305008CF80F /* DKSettingPlugin5.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A356F52844C305008CF80F /* DKSettingPlugin5.m */; };
+		84A356F92844C30E008CF80F /* DKSettingPlugin6.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A356F82844C30E008CF80F /* DKSettingPlugin6.m */; };
+		84A356FC2844C317008CF80F /* DKSettingPlugin7.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A356FB2844C317008CF80F /* DKSettingPlugin7.m */; };
+		84A356FF2844C321008CF80F /* DKSettingPlugin8.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A356FE2844C321008CF80F /* DKSettingPlugin8.m */; };
+		84A357022844C329008CF80F /* DKSettingPlugin9.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A357012844C329008CF80F /* DKSettingPlugin9.m */; };
+		84A357052844C599008CF80F /* DKNetworkPlugin1.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A357042844C599008CF80F /* DKNetworkPlugin1.m */; };
+		84A357082844C5A3008CF80F /* DKNetworkPlugin2.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A357072844C5A3008CF80F /* DKNetworkPlugin2.m */; };
+		84A3570B2844C5AB008CF80F /* DKNetworkPlugin3.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A3570A2844C5AB008CF80F /* DKNetworkPlugin3.m */; };
+		84A3570E2844C5B4008CF80F /* DKNetworkPlugin4.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A3570D2844C5B4008CF80F /* DKNetworkPlugin4.m */; };
+		84A357112844C5BC008CF80F /* DKNetworkPlugin5.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A357102844C5BC008CF80F /* DKNetworkPlugin5.m */; };
+		84A357142844C5C4008CF80F /* DKNetworkPlugin6.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A357132844C5C4008CF80F /* DKNetworkPlugin6.m */; };
+		84A357172844C5CD008CF80F /* DKNetworkPlugin7.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A357162844C5CD008CF80F /* DKNetworkPlugin7.m */; };
+		84A3571A2844C5D6008CF80F /* DKNetworkPlugin8.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A357192844C5D6008CF80F /* DKNetworkPlugin8.m */; };
+		84A3571D2844C5DE008CF80F /* DKNetworkPlugin9.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A3571C2844C5DE008CF80F /* DKNetworkPlugin9.m */; };
+		84FAA892283F60F900925BF6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FAA891283F60F900925BF6 /* AppDelegate.m */; };
+		84FAA898283F60F900925BF6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FAA897283F60F900925BF6 /* ViewController.m */; };
+		84FAA89B283F60F900925BF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FAA899283F60F900925BF6 /* Main.storyboard */; };
+		84FAA89D283F60FA00925BF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FAA89C283F60FA00925BF6 /* Assets.xcassets */; };
+		84FAA8A0283F60FA00925BF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FAA89E283F60FA00925BF6 /* LaunchScreen.storyboard */; };
+		84FAA8A3283F60FA00925BF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FAA8A2283F60FA00925BF6 /* main.m */; };
+		84FAA8AD283F60FB00925BF6 /* DKSkynetDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FAA8AC283F60FB00925BF6 /* DKSkynetDemoTests.m */; };
+		84FAA8B7283F60FB00925BF6 /* DKSkynetDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FAA8B6283F60FB00925BF6 /* DKSkynetDemoUITests.m */; };
+		84FAA8B9283F60FB00925BF6 /* DKSkynetDemoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FAA8B8283F60FB00925BF6 /* DKSkynetDemoUITestsLaunchTests.m */; };
+		CE6A7BE675B50FE164761E6B /* libPods-DKSkynetDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A256C63D02DBA425A0E7E1E /* libPods-DKSkynetDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84FAA8A9283F60FB00925BF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84FAA885283F60F900925BF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84FAA88C283F60F900925BF6;
+			remoteInfo = DKSkynetDemo;
+		};
+		84FAA8B3283F60FB00925BF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84FAA885283F60F900925BF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84FAA88C283F60F900925BF6;
+			remoteInfo = DKSkynetDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		40C6BD28319DCA33FD422BF0 /* Pods-DKSkynetDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DKSkynetDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-DKSkynetDemoTests/Pods-DKSkynetDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		43F94F4D8DD4109A320AC5D7 /* Pods-DKSkynetDemo-DKSkynetDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DKSkynetDemo-DKSkynetDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-DKSkynetDemo-DKSkynetDemoUITests/Pods-DKSkynetDemo-DKSkynetDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A256C63D02DBA425A0E7E1E /* libPods-DKSkynetDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DKSkynetDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		656B295448276C43141FC363 /* libPods-DKSkynetDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DKSkynetDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6875A630D8FFBC1B134C48A3 /* Pods-DKSkynetDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DKSkynetDemoTests.release.xcconfig"; path = "Target Support Files/Pods-DKSkynetDemoTests/Pods-DKSkynetDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		74451AAC3CD7CABEC147C1BB /* Pods-DKSkynetDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DKSkynetDemo.debug.xcconfig"; path = "Target Support Files/Pods-DKSkynetDemo/Pods-DKSkynetDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		84A356E62844B703008CF80F /* DKSettingPlugin1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKSettingPlugin1.h; sourceTree = "<group>"; };
+		84A356E72844B703008CF80F /* DKSettingPlugin1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKSettingPlugin1.m; sourceTree = "<group>"; };
+		84A356EB2844BC02008CF80F /* DKSettingPlugin2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKSettingPlugin2.h; sourceTree = "<group>"; };
+		84A356EC2844BC02008CF80F /* DKSettingPlugin2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKSettingPlugin2.m; sourceTree = "<group>"; };
+		84A356EE2844C2F3008CF80F /* DKSettingPlugin3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKSettingPlugin3.h; sourceTree = "<group>"; };
+		84A356EF2844C2F3008CF80F /* DKSettingPlugin3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKSettingPlugin3.m; sourceTree = "<group>"; };
+		84A356F12844C2FD008CF80F /* DKSettingPlugin4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKSettingPlugin4.h; sourceTree = "<group>"; };
+		84A356F22844C2FD008CF80F /* DKSettingPlugin4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKSettingPlugin4.m; sourceTree = "<group>"; };
+		84A356F42844C305008CF80F /* DKSettingPlugin5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKSettingPlugin5.h; sourceTree = "<group>"; };
+		84A356F52844C305008CF80F /* DKSettingPlugin5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKSettingPlugin5.m; sourceTree = "<group>"; };
+		84A356F72844C30E008CF80F /* DKSettingPlugin6.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKSettingPlugin6.h; sourceTree = "<group>"; };
+		84A356F82844C30E008CF80F /* DKSettingPlugin6.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKSettingPlugin6.m; sourceTree = "<group>"; };
+		84A356FA2844C317008CF80F /* DKSettingPlugin7.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKSettingPlugin7.h; sourceTree = "<group>"; };
+		84A356FB2844C317008CF80F /* DKSettingPlugin7.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKSettingPlugin7.m; sourceTree = "<group>"; };
+		84A356FD2844C321008CF80F /* DKSettingPlugin8.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKSettingPlugin8.h; sourceTree = "<group>"; };
+		84A356FE2844C321008CF80F /* DKSettingPlugin8.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKSettingPlugin8.m; sourceTree = "<group>"; };
+		84A357002844C329008CF80F /* DKSettingPlugin9.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKSettingPlugin9.h; sourceTree = "<group>"; };
+		84A357012844C329008CF80F /* DKSettingPlugin9.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKSettingPlugin9.m; sourceTree = "<group>"; };
+		84A357032844C599008CF80F /* DKNetworkPlugin1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKNetworkPlugin1.h; sourceTree = "<group>"; };
+		84A357042844C599008CF80F /* DKNetworkPlugin1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKNetworkPlugin1.m; sourceTree = "<group>"; };
+		84A357062844C5A3008CF80F /* DKNetworkPlugin2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKNetworkPlugin2.h; sourceTree = "<group>"; };
+		84A357072844C5A3008CF80F /* DKNetworkPlugin2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKNetworkPlugin2.m; sourceTree = "<group>"; };
+		84A357092844C5AB008CF80F /* DKNetworkPlugin3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKNetworkPlugin3.h; sourceTree = "<group>"; };
+		84A3570A2844C5AB008CF80F /* DKNetworkPlugin3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKNetworkPlugin3.m; sourceTree = "<group>"; };
+		84A3570C2844C5B4008CF80F /* DKNetworkPlugin4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKNetworkPlugin4.h; sourceTree = "<group>"; };
+		84A3570D2844C5B4008CF80F /* DKNetworkPlugin4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKNetworkPlugin4.m; sourceTree = "<group>"; };
+		84A3570F2844C5BC008CF80F /* DKNetworkPlugin5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKNetworkPlugin5.h; sourceTree = "<group>"; };
+		84A357102844C5BC008CF80F /* DKNetworkPlugin5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKNetworkPlugin5.m; sourceTree = "<group>"; };
+		84A357122844C5C4008CF80F /* DKNetworkPlugin6.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKNetworkPlugin6.h; sourceTree = "<group>"; };
+		84A357132844C5C4008CF80F /* DKNetworkPlugin6.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKNetworkPlugin6.m; sourceTree = "<group>"; };
+		84A357152844C5CD008CF80F /* DKNetworkPlugin7.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKNetworkPlugin7.h; sourceTree = "<group>"; };
+		84A357162844C5CD008CF80F /* DKNetworkPlugin7.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKNetworkPlugin7.m; sourceTree = "<group>"; };
+		84A357182844C5D6008CF80F /* DKNetworkPlugin8.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKNetworkPlugin8.h; sourceTree = "<group>"; };
+		84A357192844C5D6008CF80F /* DKNetworkPlugin8.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKNetworkPlugin8.m; sourceTree = "<group>"; };
+		84A3571B2844C5DE008CF80F /* DKNetworkPlugin9.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKNetworkPlugin9.h; sourceTree = "<group>"; };
+		84A3571C2844C5DE008CF80F /* DKNetworkPlugin9.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKNetworkPlugin9.m; sourceTree = "<group>"; };
+		84FAA88D283F60F900925BF6 /* DKSkynetDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DKSkynetDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84FAA890283F60F900925BF6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84FAA891283F60F900925BF6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84FAA896283F60F900925BF6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		84FAA897283F60F900925BF6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		84FAA89A283F60F900925BF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84FAA89C283F60FA00925BF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84FAA89F283F60FA00925BF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84FAA8A1283F60FA00925BF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84FAA8A2283F60FA00925BF6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84FAA8A8283F60FB00925BF6 /* DKSkynetDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DKSkynetDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84FAA8AC283F60FB00925BF6 /* DKSkynetDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKSkynetDemoTests.m; sourceTree = "<group>"; };
+		84FAA8B2283F60FB00925BF6 /* DKSkynetDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DKSkynetDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84FAA8B6283F60FB00925BF6 /* DKSkynetDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKSkynetDemoUITests.m; sourceTree = "<group>"; };
+		84FAA8B8283F60FB00925BF6 /* DKSkynetDemoUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKSkynetDemoUITestsLaunchTests.m; sourceTree = "<group>"; };
+		84FAA8DF2840B4F000925BF6 /* DKSkynet.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = DKSkynet.podspec; path = ../DKSkynet.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		84FAA8E02840B4F000925BF6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		CEEE84F17CC0F76943689917 /* Pods-DKSkynetDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DKSkynetDemo.release.xcconfig"; path = "Target Support Files/Pods-DKSkynetDemo/Pods-DKSkynetDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D3B48A7ECB2EC8C8CB7546A3 /* Pods-DKSkynetDemo-DKSkynetDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DKSkynetDemo-DKSkynetDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-DKSkynetDemo-DKSkynetDemoUITests/Pods-DKSkynetDemo-DKSkynetDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D72DEFCF31F0DF5FC8D50751 /* libPods-DKSkynetDemo-DKSkynetDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DKSkynetDemo-DKSkynetDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84FAA88A283F60F900925BF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE6A7BE675B50FE164761E6B /* libPods-DKSkynetDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FAA8A5283F60FB00925BF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2395445E4F11C7697E559767 /* libPods-DKSkynetDemoTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FAA8AF283F60FB00925BF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F87EF623D11376124CE321D /* libPods-DKSkynetDemo-DKSkynetDemoUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84A356E92844BBB4008CF80F /* SettingPlugins */ = {
+			isa = PBXGroup;
+			children = (
+				84A356E62844B703008CF80F /* DKSettingPlugin1.h */,
+				84A356E72844B703008CF80F /* DKSettingPlugin1.m */,
+				84A356EB2844BC02008CF80F /* DKSettingPlugin2.h */,
+				84A356EC2844BC02008CF80F /* DKSettingPlugin2.m */,
+				84A356EE2844C2F3008CF80F /* DKSettingPlugin3.h */,
+				84A356EF2844C2F3008CF80F /* DKSettingPlugin3.m */,
+				84A356F12844C2FD008CF80F /* DKSettingPlugin4.h */,
+				84A356F22844C2FD008CF80F /* DKSettingPlugin4.m */,
+				84A356F42844C305008CF80F /* DKSettingPlugin5.h */,
+				84A356F52844C305008CF80F /* DKSettingPlugin5.m */,
+				84A356F72844C30E008CF80F /* DKSettingPlugin6.h */,
+				84A356F82844C30E008CF80F /* DKSettingPlugin6.m */,
+				84A356FA2844C317008CF80F /* DKSettingPlugin7.h */,
+				84A356FB2844C317008CF80F /* DKSettingPlugin7.m */,
+				84A356FD2844C321008CF80F /* DKSettingPlugin8.h */,
+				84A356FE2844C321008CF80F /* DKSettingPlugin8.m */,
+				84A357002844C329008CF80F /* DKSettingPlugin9.h */,
+				84A357012844C329008CF80F /* DKSettingPlugin9.m */,
+			);
+			path = SettingPlugins;
+			sourceTree = "<group>";
+		};
+		84A356EA2844BBDA008CF80F /* NetworkPlugins */ = {
+			isa = PBXGroup;
+			children = (
+				84A357032844C599008CF80F /* DKNetworkPlugin1.h */,
+				84A357042844C599008CF80F /* DKNetworkPlugin1.m */,
+				84A357062844C5A3008CF80F /* DKNetworkPlugin2.h */,
+				84A357072844C5A3008CF80F /* DKNetworkPlugin2.m */,
+				84A357092844C5AB008CF80F /* DKNetworkPlugin3.h */,
+				84A3570A2844C5AB008CF80F /* DKNetworkPlugin3.m */,
+				84A3570C2844C5B4008CF80F /* DKNetworkPlugin4.h */,
+				84A3570D2844C5B4008CF80F /* DKNetworkPlugin4.m */,
+				84A3570F2844C5BC008CF80F /* DKNetworkPlugin5.h */,
+				84A357102844C5BC008CF80F /* DKNetworkPlugin5.m */,
+				84A357122844C5C4008CF80F /* DKNetworkPlugin6.h */,
+				84A357132844C5C4008CF80F /* DKNetworkPlugin6.m */,
+				84A357152844C5CD008CF80F /* DKNetworkPlugin7.h */,
+				84A357162844C5CD008CF80F /* DKNetworkPlugin7.m */,
+				84A357182844C5D6008CF80F /* DKNetworkPlugin8.h */,
+				84A357192844C5D6008CF80F /* DKNetworkPlugin8.m */,
+				84A3571B2844C5DE008CF80F /* DKNetworkPlugin9.h */,
+				84A3571C2844C5DE008CF80F /* DKNetworkPlugin9.m */,
+			);
+			name = NetworkPlugins;
+			sourceTree = "<group>";
+		};
+		84FAA884283F60F900925BF6 = {
+			isa = PBXGroup;
+			children = (
+				84FAA8DE2840B4AD00925BF6 /* Podspec Metadata */,
+				84FAA88F283F60F900925BF6 /* DKSkynetDemo */,
+				84FAA8AB283F60FB00925BF6 /* DKSkynetDemoTests */,
+				84FAA8B5283F60FB00925BF6 /* DKSkynetDemoUITests */,
+				84FAA88E283F60F900925BF6 /* Products */,
+				FF0D9A529BAC240708711550 /* Pods */,
+				97440528AC93802F22B5FD43 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84FAA88E283F60F900925BF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84FAA88D283F60F900925BF6 /* DKSkynetDemo.app */,
+				84FAA8A8283F60FB00925BF6 /* DKSkynetDemoTests.xctest */,
+				84FAA8B2283F60FB00925BF6 /* DKSkynetDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84FAA88F283F60F900925BF6 /* DKSkynetDemo */ = {
+			isa = PBXGroup;
+			children = (
+				84A356EA2844BBDA008CF80F /* NetworkPlugins */,
+				84A356E92844BBB4008CF80F /* SettingPlugins */,
+				84FAA890283F60F900925BF6 /* AppDelegate.h */,
+				84FAA891283F60F900925BF6 /* AppDelegate.m */,
+				84FAA896283F60F900925BF6 /* ViewController.h */,
+				84FAA897283F60F900925BF6 /* ViewController.m */,
+				84FAA8C5283F61CA00925BF6 /* Supporting Files */,
+			);
+			path = DKSkynetDemo;
+			sourceTree = "<group>";
+		};
+		84FAA8AB283F60FB00925BF6 /* DKSkynetDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				84FAA8AC283F60FB00925BF6 /* DKSkynetDemoTests.m */,
+			);
+			path = DKSkynetDemoTests;
+			sourceTree = "<group>";
+		};
+		84FAA8B5283F60FB00925BF6 /* DKSkynetDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84FAA8B6283F60FB00925BF6 /* DKSkynetDemoUITests.m */,
+				84FAA8B8283F60FB00925BF6 /* DKSkynetDemoUITestsLaunchTests.m */,
+			);
+			path = DKSkynetDemoUITests;
+			sourceTree = "<group>";
+		};
+		84FAA8C5283F61CA00925BF6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84FAA899283F60F900925BF6 /* Main.storyboard */,
+				84FAA89C283F60FA00925BF6 /* Assets.xcassets */,
+				84FAA89E283F60FA00925BF6 /* LaunchScreen.storyboard */,
+				84FAA8A1283F60FA00925BF6 /* Info.plist */,
+				84FAA8A2283F60FA00925BF6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84FAA8DE2840B4AD00925BF6 /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				84FAA8DF2840B4F000925BF6 /* DKSkynet.podspec */,
+				84FAA8E02840B4F000925BF6 /* README.md */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		97440528AC93802F22B5FD43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A256C63D02DBA425A0E7E1E /* libPods-DKSkynetDemo.a */,
+				D72DEFCF31F0DF5FC8D50751 /* libPods-DKSkynetDemo-DKSkynetDemoUITests.a */,
+				656B295448276C43141FC363 /* libPods-DKSkynetDemoTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF0D9A529BAC240708711550 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74451AAC3CD7CABEC147C1BB /* Pods-DKSkynetDemo.debug.xcconfig */,
+				CEEE84F17CC0F76943689917 /* Pods-DKSkynetDemo.release.xcconfig */,
+				43F94F4D8DD4109A320AC5D7 /* Pods-DKSkynetDemo-DKSkynetDemoUITests.debug.xcconfig */,
+				D3B48A7ECB2EC8C8CB7546A3 /* Pods-DKSkynetDemo-DKSkynetDemoUITests.release.xcconfig */,
+				40C6BD28319DCA33FD422BF0 /* Pods-DKSkynetDemoTests.debug.xcconfig */,
+				6875A630D8FFBC1B134C48A3 /* Pods-DKSkynetDemoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84FAA88C283F60F900925BF6 /* DKSkynetDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84FAA8BC283F60FB00925BF6 /* Build configuration list for PBXNativeTarget "DKSkynetDemo" */;
+			buildPhases = (
+				2F4A1CF60D1EE4AA500AA928 /* [CP] Check Pods Manifest.lock */,
+				84FAA889283F60F900925BF6 /* Sources */,
+				84FAA88A283F60F900925BF6 /* Frameworks */,
+				84FAA88B283F60F900925BF6 /* Resources */,
+				8F0409750D793F7208FEAC85 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DKSkynetDemo;
+			productName = DKSkynetDemo;
+			productReference = 84FAA88D283F60F900925BF6 /* DKSkynetDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84FAA8A7283F60FB00925BF6 /* DKSkynetDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84FAA8BF283F60FB00925BF6 /* Build configuration list for PBXNativeTarget "DKSkynetDemoTests" */;
+			buildPhases = (
+				5931DDB7874F0AEDB7327175 /* [CP] Check Pods Manifest.lock */,
+				84FAA8A4283F60FB00925BF6 /* Sources */,
+				84FAA8A5283F60FB00925BF6 /* Frameworks */,
+				84FAA8A6283F60FB00925BF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84FAA8AA283F60FB00925BF6 /* PBXTargetDependency */,
+			);
+			name = DKSkynetDemoTests;
+			productName = DKSkynetDemoTests;
+			productReference = 84FAA8A8283F60FB00925BF6 /* DKSkynetDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84FAA8B1283F60FB00925BF6 /* DKSkynetDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84FAA8C2283F60FB00925BF6 /* Build configuration list for PBXNativeTarget "DKSkynetDemoUITests" */;
+			buildPhases = (
+				97A13A537EE1BD3C4BDDE0CE /* [CP] Check Pods Manifest.lock */,
+				84FAA8AE283F60FB00925BF6 /* Sources */,
+				84FAA8AF283F60FB00925BF6 /* Frameworks */,
+				84FAA8B0283F60FB00925BF6 /* Resources */,
+				847D693AC723196F1BB07F9E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84FAA8B4283F60FB00925BF6 /* PBXTargetDependency */,
+			);
+			name = DKSkynetDemoUITests;
+			productName = DKSkynetDemoUITests;
+			productReference = 84FAA8B2283F60FB00925BF6 /* DKSkynetDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84FAA885283F60F900925BF6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					84FAA88C283F60F900925BF6 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					84FAA8A7283F60FB00925BF6 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 84FAA88C283F60F900925BF6;
+					};
+					84FAA8B1283F60FB00925BF6 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 84FAA88C283F60F900925BF6;
+					};
+				};
+			};
+			buildConfigurationList = 84FAA888283F60F900925BF6 /* Build configuration list for PBXProject "DKSkynetDemo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84FAA884283F60F900925BF6;
+			productRefGroup = 84FAA88E283F60F900925BF6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84FAA88C283F60F900925BF6 /* DKSkynetDemo */,
+				84FAA8A7283F60FB00925BF6 /* DKSkynetDemoTests */,
+				84FAA8B1283F60FB00925BF6 /* DKSkynetDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84FAA88B283F60F900925BF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FAA8A0283F60FA00925BF6 /* LaunchScreen.storyboard in Resources */,
+				84FAA89D283F60FA00925BF6 /* Assets.xcassets in Resources */,
+				84FAA89B283F60F900925BF6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FAA8A6283F60FB00925BF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FAA8B0283F60FB00925BF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F4A1CF60D1EE4AA500AA928 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DKSkynetDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5931DDB7874F0AEDB7327175 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DKSkynetDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		847D693AC723196F1BB07F9E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DKSkynetDemo-DKSkynetDemoUITests/Pods-DKSkynetDemo-DKSkynetDemoUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DKSkynetDemo-DKSkynetDemoUITests/Pods-DKSkynetDemo-DKSkynetDemoUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DKSkynetDemo-DKSkynetDemoUITests/Pods-DKSkynetDemo-DKSkynetDemoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F0409750D793F7208FEAC85 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DKSkynetDemo/Pods-DKSkynetDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DKSkynetDemo/Pods-DKSkynetDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DKSkynetDemo/Pods-DKSkynetDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97A13A537EE1BD3C4BDDE0CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DKSkynetDemo-DKSkynetDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84FAA889283F60F900925BF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A3570B2844C5AB008CF80F /* DKNetworkPlugin3.m in Sources */,
+				84FAA898283F60F900925BF6 /* ViewController.m in Sources */,
+				84A356F32844C2FD008CF80F /* DKSettingPlugin4.m in Sources */,
+				84A357022844C329008CF80F /* DKSettingPlugin9.m in Sources */,
+				84A357052844C599008CF80F /* DKNetworkPlugin1.m in Sources */,
+				84A3571A2844C5D6008CF80F /* DKNetworkPlugin8.m in Sources */,
+				84FAA892283F60F900925BF6 /* AppDelegate.m in Sources */,
+				84A356F02844C2F3008CF80F /* DKSettingPlugin3.m in Sources */,
+				84A356FC2844C317008CF80F /* DKSettingPlugin7.m in Sources */,
+				84A3571D2844C5DE008CF80F /* DKNetworkPlugin9.m in Sources */,
+				84A356E82844B703008CF80F /* DKSettingPlugin1.m in Sources */,
+				84A357142844C5C4008CF80F /* DKNetworkPlugin6.m in Sources */,
+				84A3570E2844C5B4008CF80F /* DKNetworkPlugin4.m in Sources */,
+				84A356FF2844C321008CF80F /* DKSettingPlugin8.m in Sources */,
+				84A357082844C5A3008CF80F /* DKNetworkPlugin2.m in Sources */,
+				84A357112844C5BC008CF80F /* DKNetworkPlugin5.m in Sources */,
+				84FAA8A3283F60FA00925BF6 /* main.m in Sources */,
+				84A356F62844C305008CF80F /* DKSettingPlugin5.m in Sources */,
+				84A357172844C5CD008CF80F /* DKNetworkPlugin7.m in Sources */,
+				84A356ED2844BC02008CF80F /* DKSettingPlugin2.m in Sources */,
+				84A356F92844C30E008CF80F /* DKSettingPlugin6.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FAA8A4283F60FB00925BF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FAA8AD283F60FB00925BF6 /* DKSkynetDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FAA8AE283F60FB00925BF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FAA8B9283F60FB00925BF6 /* DKSkynetDemoUITestsLaunchTests.m in Sources */,
+				84FAA8B7283F60FB00925BF6 /* DKSkynetDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84FAA8AA283F60FB00925BF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84FAA88C283F60F900925BF6 /* DKSkynetDemo */;
+			targetProxy = 84FAA8A9283F60FB00925BF6 /* PBXContainerItemProxy */;
+		};
+		84FAA8B4283F60FB00925BF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84FAA88C283F60F900925BF6 /* DKSkynetDemo */;
+			targetProxy = 84FAA8B3283F60FB00925BF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84FAA899283F60F900925BF6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84FAA89A283F60F900925BF6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84FAA89E283F60FA00925BF6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84FAA89F283F60FA00925BF6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84FAA8BA283F60FB00925BF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84FAA8BB283F60FB00925BF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84FAA8BD283F60FB00925BF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74451AAC3CD7CABEC147C1BB /* Pods-DKSkynetDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2XYFGP8X89;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DKSkynetDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.duke.DKSkynetDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84FAA8BE283F60FB00925BF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEEE84F17CC0F76943689917 /* Pods-DKSkynetDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2XYFGP8X89;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DKSkynetDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.duke.DKSkynetDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84FAA8C0283F60FB00925BF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40C6BD28319DCA33FD422BF0 /* Pods-DKSkynetDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2XYFGP8X89;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.duke.DKSkynetDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DKSkynetDemo.app/DKSkynetDemo";
+			};
+			name = Debug;
+		};
+		84FAA8C1283F60FB00925BF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6875A630D8FFBC1B134C48A3 /* Pods-DKSkynetDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2XYFGP8X89;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.duke.DKSkynetDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DKSkynetDemo.app/DKSkynetDemo";
+			};
+			name = Release;
+		};
+		84FAA8C3283F60FB00925BF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43F94F4D8DD4109A320AC5D7 /* Pods-DKSkynetDemo-DKSkynetDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2XYFGP8X89;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.duke.DKSkynetDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DKSkynetDemo;
+			};
+			name = Debug;
+		};
+		84FAA8C4283F60FB00925BF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3B48A7ECB2EC8C8CB7546A3 /* Pods-DKSkynetDemo-DKSkynetDemoUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2XYFGP8X89;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.duke.DKSkynetDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DKSkynetDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84FAA888283F60F900925BF6 /* Build configuration list for PBXProject "DKSkynetDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FAA8BA283F60FB00925BF6 /* Debug */,
+				84FAA8BB283F60FB00925BF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84FAA8BC283F60FB00925BF6 /* Build configuration list for PBXNativeTarget "DKSkynetDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FAA8BD283F60FB00925BF6 /* Debug */,
+				84FAA8BE283F60FB00925BF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84FAA8BF283F60FB00925BF6 /* Build configuration list for PBXNativeTarget "DKSkynetDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FAA8C0283F60FB00925BF6 /* Debug */,
+				84FAA8C1283F60FB00925BF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84FAA8C2283F60FB00925BF6 /* Build configuration list for PBXNativeTarget "DKSkynetDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FAA8C3283F60FB00925BF6 /* Debug */,
+				84FAA8C4283F60FB00925BF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84FAA885283F60F900925BF6 /* Project object */;
+}

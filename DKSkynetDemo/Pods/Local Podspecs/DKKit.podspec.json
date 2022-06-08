@@ -1,0 +1,38 @@
+{
+  "name": "DKKit",
+  "version": "0.1.0",
+  "summary": "A short description of DKKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/git/DKKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "git": "364101515@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/git/DKKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "DKKit/**/**/*.{h,m}",
+  "public_header_files": "DKKit/**/**/*.{h}",
+  "resource_bundles": {
+    "DKKit": [
+      "DKKit/Assets/*.png"
+    ]
+  },
+  "frameworks": [
+    "UIKit",
+    "CoreFoundation",
+    "CoreText",
+    "CoreGraphics",
+    "CoreImage",
+    "QuartzCore",
+    "ImageIO",
+    "AssetsLibrary"
+  ]
+}
