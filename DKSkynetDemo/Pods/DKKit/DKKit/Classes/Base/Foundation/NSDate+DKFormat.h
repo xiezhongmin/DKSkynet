@@ -32,6 +32,15 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) BOOL isYesterday; ///< whether date is yesterday (based on current locale)
 
 
+#pragma mark - Date Util -
+
+/**
+ *  将时间转化为显示时间
+ *  1.刚刚 2.X分钟前 3.X小时前 4.多少天前
+ */
+- (NSString *)dk_beforeCurrentTimeNow;
+
+
 #pragma mark - Date Format -
 
 /**

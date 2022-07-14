@@ -9,6 +9,11 @@
 
 @interface NSArray (DKModel)
 
+/**
+ *  NSArray -> JSONString
+ *
+ *  @return JSONString
+ */
 - (NSString *)dk_jsonString;
 
 @end

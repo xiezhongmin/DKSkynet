@@ -7,9 +7,11 @@
 
 #import "DKAPMFPSMonitor.h"
 #import <DKKit/DKWeakProxy.h>
+#import <DKKit/DKKitMacro.h>
 
 @interface DKAPMFPSMonitor ()
 @property (nonatomic, assign) NSUInteger count;
+@property (nonatomic, assign, readwrite) BOOL isMonitoring;
 @property (nonatomic, assign) NSTimeInterval lastTime;
 @property (nonatomic, strong) CADisplayLink *displayLink;
 @property (nonatomic, copy) void (^displayLinkBlock)(int fps);
@@ -30,10 +32,11 @@
 - (void)startMonitoring:(void (^)(int fps))block
 {
     if (!block) {
-        NSLog(@"[DKAPMMonitor] - ERROR: block is nil");
+        DKLogError(@"startMonitoring: block is nil");
         return;
     }
     
+    _isMonitoring = YES;
     if (_displayLink) { [_displayLink invalidate]; }
     _displayLinkBlock = block;
     _displayLink = [CADisplayLink displayLinkWithTarget:[DKWeakProxy proxyWithTarget:self] selector:@selector(monitor:)];
@@ -49,6 +52,7 @@
 
 - (void)stopMonitoring
 {
+    _isMonitoring = NO;
     [_displayLink invalidate];
     _displayLink = nil;
     _displayLinkBlock = nil;

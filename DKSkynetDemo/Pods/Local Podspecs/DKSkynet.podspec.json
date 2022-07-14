@@ -19,15 +19,15 @@
     "ios": "9.0"
   },
   "resources": "DKSkynet/Resource/*",
-  "default_subspecs": "Core",
+  "default_subspecs": [
+    "Core",
+    "DefaultPlugins"
+  ],
   "dependencies": {
     "DKKit": [
 
     ],
     "DKAPMMonitor": [
-
-    ],
-    "Masonry": [
 
     ],
     "SDWebImage": [
@@ -40,8 +40,71 @@
       "public_header_files": "DKSkynet/Classes/Core/**/*.{h}",
       "source_files": [
         "DKSkynet/Classes/Core/**/*.{h,m}",
-        "DKSkynet/Lib/XFAssistiveTouch/**/*.{h,m}"
+        "DKSkynet/Classes/Core/Lib/XFAssistiveTouch/**/*.{h,m}"
+      ],
+      "dependencies": {
+        "DKSkynet/Store": [
+
+        ],
+        "DKSkynet/Common": [
+
+        ]
+      }
+    },
+    {
+      "name": "DefaultPlugins",
+      "dependencies": {
+        "DKSkynet/NetworkPlugins": [
+
+        ]
+      }
+    },
+    {
+      "name": "NetworkPlugins",
+      "subspecs": [
+        {
+          "name": "Common",
+          "public_header_files": "DKSkynet/Classes/NetworkPlugins/Common/**/*.{h}",
+          "source_files": "DKSkynet/Classes/NetworkPlugins/Common/**/*.{h,m}"
+        },
+        {
+          "name": "Monitor",
+          "public_header_files": "DKSkynet/Classes/NetworkPlugins/Monitor/**/*.{h}",
+          "source_files": "DKSkynet/Classes/NetworkPlugins/Monitor/**/*.{h,m}"
+        }
       ]
+    },
+    {
+      "name": "Store",
+      "public_header_files": "DKSkynet/Classes/Store/*.{h}",
+      "source_files": "DKSkynet/Classes/Store/*.{h,m}",
+      "subspecs": [
+        {
+          "name": "MTAppenderFile",
+          "public_header_files": [
+            "DKSkynet/Classes/Store/MTAppenderFile/loglib/MTAppenderFile.h",
+            "DKSkynet/Classes/Store/MTAppenderFile/loglib/mtaf_base.h",
+            "DKSkynet/Classes/Store/MTAppenderFile/loglib/mtaf_appender.h"
+          ],
+          "source_files": [
+            "DKSkynet/Classes/Store/MTAppenderFile/comm/*.{h,hpp,m,mm,cpp,cc,c}",
+            "DKSkynet/Classes/Store/MTAppenderFile/loglib/*.{h,hpp,m,mm,cpp,cc,c}"
+          ],
+          "requires_arc": false,
+          "libraries": [
+            "z",
+            "c++"
+          ],
+          "pod_target_xcconfig": {
+            "OTHER_LDFLAGS": "-lc++"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Common",
+      "public_header_files": "DKSkynet/Classes/Common/**/*.{h}",
+      "source_files": "DKSkynet/Classes/Common/**/*.{h,m}"
     }
   ]
 }

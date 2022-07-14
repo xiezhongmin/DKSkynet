@@ -1,1 +1,1 @@
-../../../DKKit/DKKit/Classes/Base/Foundation/NSString+DKModel.h
+../../../DKKit/DKKit/Classes/Model/NSString+DKModel.h

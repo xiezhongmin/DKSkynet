@@ -18,7 +18,7 @@
                                                    options:NSJSONWritingPrettyPrinted
                                                      error:&error];
     if (error) {
-        DKLog(@"JSON Parse Error-----%@", error);
+        DKLogError(@"JSON Parse Error-----%@", error);
     }
     
     if ([data length] > 0) {

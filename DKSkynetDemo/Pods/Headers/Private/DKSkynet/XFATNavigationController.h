@@ -1,1 +1,1 @@
-../../../../../DKSkynet/Lib/XFAssistiveTouch/XFATNavigationController.h
+../../../../../DKSkynet/Classes/Core/Lib/XFAssistiveTouch/XFATNavigationController.h

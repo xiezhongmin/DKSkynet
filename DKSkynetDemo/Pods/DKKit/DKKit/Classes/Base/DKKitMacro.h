@@ -14,14 +14,61 @@
 #define DKDEBUG ([NSClassFromString(@"DKDebug") class]? 1:0)
 #define DKAssert(condition,...) if (DKDEBUG == 1) NSAssert(condition,__VA_ARGS__)
 
+
 /**
- *  Log
+ *  NSLog
+ *  Level: 1 error, 2 Warn, 3 Info, 4 Debug, 5 Verbose, 6 FileLine
  */
-#ifdef DEBUG
-#define DKLog(...) NSLog(__VA_ARGS__)
-#else
-#define DKLog(...)
+#ifndef DK_NSLOG_LEVEL
+    #define DK_NSLOG_LEVEL  (6)
 #endif
+
+#ifdef DEBUG
+#ifndef DKLog
+    #define DKLog(frmt, ...)            do{ if(DK_NSLOG_LEVEL >= 0) NSLog((@"" frmt), ##__VA_ARGS__); } while(0)
+#endif
+#ifndef DKLogDebug
+    #define DKLogDebug(frmt, ...)       do{ if(DK_NSLOG_LEVEL >= 4) NSLog((@"[Debug] " frmt), ##__VA_ARGS__); } while(0)
+#endif
+#ifndef DKLogInfo
+    #define DKLogInfo(frmt, ...)        do{ if(DK_NSLOG_LEVEL >= 3) NSLog((@"[Info] " frmt), ##__VA_ARGS__); } while(0)
+#endif
+#ifndef DKLogError
+    #define DKLogError(frmt, ...)       do{ if(DK_NSLOG_LEVEL >= 1) NSLog((@"[Error] " frmt), ##__VA_ARGS__); } while(0)
+#endif
+#ifndef DKLogWarn
+    #define DKLogWarn(frmt, ...)        do{ if(DK_NSLOG_LEVEL >= 2) NSLog((@"[Warn] " frmt), ##__VA_ARGS__); } while(0)
+#endif
+#ifndef DKLogVerbose
+    #define DKLogVerbose(frmt, ...)     do{ if(DK_NSLOG_LEVEL >= 5) NSLog((@"[Verbose] " frmt), ##__VA_ARGS__); } while(0)
+#endif
+#ifndef DKLogFileLine
+    #define DKLogFileLine(frmt, ...)    do{ if(DK_NSLOG_LEVEL >= 6) NSLog((@"<file:%@, line:%d> " frmt), [[NSString stringWithFormat:@"%s", __FILE__] lastPathComponent], __LINE__, ##__VA_ARGS__); } while(0)
+#endif
+#else
+#ifndef DKLog
+    #define DKLog(frmt, ...)
+#endif
+#ifndef DKLogDebug
+    #define DKLogDebug(frmt, ...)
+#endif
+#ifndef DKLogInfo
+    #define DKLogInfo(frmt, ...)
+#endif
+#ifndef DKLogError
+    #define DKLogError(frmt, ...)
+#endif
+#ifndef DKLogWarn
+    #define DKLogWarn(frmt, ...)
+#endif
+#ifndef DKLogVerbose
+    #define DKLogVerbose(frmt, ...)
+#endif
+#ifndef DKLogFileLine
+    #define DKLogFileLine(frmt, ...)
+#endif
+#endif
+
 
 /**
  *  检测系统版本
@@ -36,6 +83,7 @@
 #define DK_IOS9_OR_LATER    ([[[UIDevice currentDevice] systemVersion] compare:@"9" options:NSNumericSearch] == NSOrderedDescending)
 #define DK_IOS8_OR_LATER    ([[[UIDevice currentDevice] systemVersion] compare:@"8" options:NSNumericSearch] == NSOrderedDescending)
 #define DK_IOS7_OR_LATER    ([[[UIDevice currentDevice] systemVersion] compare:@"7" options:NSNumericSearch] == NSOrderedDescending)
+
 
 /**
  *  判断iphoneX

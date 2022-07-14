@@ -72,7 +72,7 @@
     objc_setAssociatedObject(self, @selector(dk_highlightFont), highlightCocor, OBJC_ASSOCIATION_RETAIN);
 
     if (self.dk_highlightText == nil && self.dk_highlightRange.length == 0) {
-        DKLog(@"DKAttributed: ERROR highlightText = nil or highlightRange.length = 0!");
+        DKLogError(@"highlightText = nil or highlightRange.length = 0!");
         return;
     }
     
@@ -97,7 +97,7 @@
     objc_setAssociatedObject(self, @selector(dk_highlightFont), highlightFont, OBJC_ASSOCIATION_RETAIN);
     
     if (self.dk_highlightText == nil && self.dk_highlightRange.length == 0) {
-        DKLog(@"DKAttributed: ERROR highlightText = nil or highlightRange.length = 0!");
+        DKLogError(@"highlightText = nil or highlightRange.length = 0!");
         return;
     }
     

@@ -10,6 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DKAPMFPSMonitor : NSObject
+@property (nonatomic, assign, readonly) BOOL isMonitoring;
 
 + (instancetype)shared;
 - (void)startMonitoring:(void (^)(int fps))block;

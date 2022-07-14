@@ -1,1 +1,1 @@
-../../../../../DKSkynet/Lib/XFAssistiveTouch/XFATPosition.h
+../../../../../DKSkynet/Classes/Core/Lib/XFAssistiveTouch/XFATPosition.h

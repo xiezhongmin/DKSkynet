@@ -21,7 +21,7 @@
                                                                options:NSJSONReadingMutableContainers
                                                                  error:&error];
     if (error) {
-        DKLog(@"JSON to Dict Error-----%@", error);
+        DKLogError(@"JSON to Dict Error-----%@", error);
     }
     return resultDic;
 }
@@ -35,7 +35,7 @@
     NSData *data = [NSJSONSerialization dataWithJSONObject:dict options:NSJSONWritingPrettyPrinted error:&error];
     NSString *json = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     if (error) {
-        DKLog(@"JSON Parse Error-----%@", error);
+        DKLogError(@"JSON Parse Error-----%@", error);
     }
     return json;
 }

@@ -1,1 +1,1 @@
-../../../../../DKSkynet/Lib/XFAssistiveTouch/XFATLayoutAttributes.h
+../../../../../DKSkynet/Classes/Core/Lib/XFAssistiveTouch/XFATLayoutAttributes.h

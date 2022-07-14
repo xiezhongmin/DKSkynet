@@ -8,9 +8,11 @@
 #import "DKAPMResourceMonitor.h"
 #import "DKAPMCPUUsage.h"
 #import "DKAPMMemoryUsage.h"
+#import <DKKit/DKKitMacro.h>
 
 @interface DKAPMResourceMonitor ()
 @property (nonatomic) dispatch_source_t globalTimer;
+@property (nonatomic, assign, readwrite) BOOL isMonitoring;
 @end
 
 @implementation DKAPMResourceMonitor
@@ -42,14 +44,15 @@
 - (void)startMonitoring:(NSTimeInterval)timeInterval block:(void (^)(double cpuUsage, double memoryUsage))block
 {
     if (timeInterval < 0) {
-        NSLog(@"[DKAPMMonitor] - ERROR: timeInterval < 0");
+        DKLogError(@"startMonitoring: timeInterval < 0");
         return;
     }
     if (!block) {
-        NSLog(@"[DKAPMMonitor] - ERROR: block is nil");
+        DKLogError(@"startMonitoring: block is nil");
         return;
     }
     
+    _isMonitoring = YES;
     if (_globalTimer != NULL) { dispatch_source_cancel(_globalTimer); }
     dispatch_queue_attr_t attr = dispatch_queue_attr_make_with_qos_class(DISPATCH_QUEUE_SERIAL, QOS_CLASS_DEFAULT, DISPATCH_QUEUE_PRIORITY_DEFAULT);
     dispatch_queue_t queue = dispatch_queue_create("monitor.resource.queue", attr);
@@ -63,6 +66,7 @@
 
 - (void)stopMonitoring
 {
+    _isMonitoring = NO;
     if (_globalTimer != NULL) {
         dispatch_source_cancel(_globalTimer);
         _globalTimer = NULL;

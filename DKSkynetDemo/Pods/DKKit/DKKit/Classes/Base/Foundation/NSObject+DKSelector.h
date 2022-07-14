@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)dk_performSelector:(SEL)sel afterDelay:(NSTimeInterval)delay;
 
-// ---------------------------- NSInvocation NSMethodSignature ----------------------------
+// MARK: ------------------ NSInvocation NSMethodSignature ------------------
 
 + (id)dk_getReturnFromInv:(NSInvocation *)inv withSig:(NSMethodSignature *)sig;
 

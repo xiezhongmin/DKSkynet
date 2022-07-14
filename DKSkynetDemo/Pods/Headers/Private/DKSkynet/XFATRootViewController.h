@@ -1,1 +1,1 @@
-../../../../../DKSkynet/Lib/XFAssistiveTouch/XFATRootViewController.h
+../../../../../DKSkynet/Classes/Core/Lib/XFAssistiveTouch/XFATRootViewController.h

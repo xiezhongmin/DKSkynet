@@ -32,6 +32,8 @@
 #import "UIControl+DKBlock.h"
 #import "UIButton+DKExpandTouchArea.h"
 #import "DKWeakProxy.h"
+#import "DKMethodsHooking.h"
+#import "NSDate+DKFormat.h"
 
 #endif /* DKKit_h */
 

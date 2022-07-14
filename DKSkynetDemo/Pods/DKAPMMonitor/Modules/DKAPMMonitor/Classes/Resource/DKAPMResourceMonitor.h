@@ -10,6 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DKAPMResourceMonitor : NSObject
+@property (nonatomic, assign, readonly) BOOL isMonitoring;
 
 + (instancetype)shared;
 - (void)startMonitoring:(void (^)(double cpuUsage, double memoryUsage))block;

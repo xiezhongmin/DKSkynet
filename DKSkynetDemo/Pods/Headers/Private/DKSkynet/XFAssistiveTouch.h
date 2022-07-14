@@ -1,1 +1,1 @@
-../../../../../DKSkynet/Lib/XFAssistiveTouch/XFAssistiveTouch.h
+../../../../../DKSkynet/Classes/Core/Lib/XFAssistiveTouch/XFAssistiveTouch.h

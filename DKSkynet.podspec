@@ -29,15 +29,53 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
   s.resource = 'DKSkynet/Resource/*'
 
-  s.default_subspecs = 'Core'
+  s.default_subspecs = 'Core', 'DefaultPlugins'
 
   s.subspec 'Core' do |sp|
-    sp.public_header_files = 'DKSkynet/Classes/Core/**/*.{h}'
-    sp.source_files = 'DKSkynet/Classes/Core/**/*.{h,m}','DKSkynet/Lib/XFAssistiveTouch/**/*.{h,m}'
+      sp.public_header_files = 'DKSkynet/Classes/Core/**/*.{h}'
+      sp.source_files = 'DKSkynet/Classes/Core/**/*.{h,m}','DKSkynet/Classes/Core/Lib/XFAssistiveTouch/**/*.{h,m}'
+      sp.dependency 'DKSkynet/Store'
+      sp.dependency 'DKSkynet/Common'
+  end
+  
+  s.subspec 'DefaultPlugins' do |sp|
+    sp.dependency 'DKSkynet/NetworkPlugins'
+  end
+  
+  s.subspec 'NetworkPlugins' do |net|
+      net.subspec 'Common' do |com|
+          com.public_header_files = 'DKSkynet/Classes/NetworkPlugins/Common/**/*.{h}'
+          com.source_files = 'DKSkynet/Classes/NetworkPlugins/Common/**/*.{h,m}'
+      end
+      
+      net.subspec 'Monitor' do |mon|
+          mon.public_header_files = 'DKSkynet/Classes/NetworkPlugins/Monitor/**/*.{h}'
+          mon.source_files = 'DKSkynet/Classes/NetworkPlugins/Monitor/**/*.{h,m}'
+      end
+  end
+  
+  s.subspec 'Store' do |sp|
+      sp.public_header_files = 'DKSkynet/Classes/Store/*.{h}'
+      sp.source_files = 'DKSkynet/Classes/Store/*.{h,m}'
+      
+      sp.subspec 'MTAppenderFile' do |mt|
+          mt.public_header_files = 'DKSkynet/Classes/Store/MTAppenderFile/loglib/MTAppenderFile.h',
+          'DKSkynet/Classes/Store/MTAppenderFile/loglib/mtaf_base.h',
+          'DKSkynet/Classes/Store/MTAppenderFile/loglib/mtaf_appender.h'
+          mt.source_files = 'DKSkynet/Classes/Store/MTAppenderFile/comm/*.{h,hpp,m,mm,cpp,cc,c}',
+          'DKSkynet/Classes/Store/MTAppenderFile/loglib/*.{h,hpp,m,mm,cpp,cc,c}'
+          mt.requires_arc = false
+          mt.libraries = "z", "c++"
+          mt.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lc++' }
+      end
+  end
+  
+  s.subspec 'Common' do |com|
+      com.public_header_files = 'DKSkynet/Classes/Common/**/*.{h}'
+      com.source_files = 'DKSkynet/Classes/Common/**/*.{h,m}'
   end
 
   s.dependency 'DKKit'
   s.dependency 'DKAPMMonitor'
-  s.dependency 'Masonry'
   s.dependency 'SDWebImage'
 end

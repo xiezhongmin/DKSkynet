@@ -153,7 +153,7 @@ static const short base64DecodingTable[256] = {
     NSError *error = nil;
     id value = [NSJSONSerialization JSONObjectWithData:self options:kNilOptions error:&error];
     if (error) {
-        DKLog(@"jsonValueDecoded error:%@", error);
+        DKLogError(@"jsonValueDecoded error:%@", error);
     }
     return value;
 }
