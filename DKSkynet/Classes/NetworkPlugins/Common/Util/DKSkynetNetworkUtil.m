@@ -27,9 +27,6 @@
     return httpResponseString;
 }
 
-
-
-
 + (NSString *)stringFromRequestDuration:(NSTimeInterval)duration
 {
     NSString *string = @"0s";
