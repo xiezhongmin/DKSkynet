@@ -25,7 +25,9 @@
 
 - (void)dealloc
 {
-    NSLog(@"DKSkynetNetworkMonitorPlugin - dealloc");
+    [[DKNetworkRecorder defaultRecorder] removeDelegate:self];
+    [[DKNetworkMonitor shared] stop];
+    DKLogInfo(@"DKSkynetNetworkMonitorPlugin - dealloc");
 }
 
 - (instancetype)init

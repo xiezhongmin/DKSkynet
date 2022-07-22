@@ -5,6 +5,11 @@
 //  Created by admin on 2020/11/23.
 //
 
+#import <UIKit/UIKit.h>
+#import <pthread.h>
+#import "UIColor+DKUtils.h"
+
+
 #ifndef DKKitMacro_h
 #define DKKitMacro_h
 
@@ -75,6 +80,9 @@
  */
 #define DK_IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
 
+#define DK_IOS_OR_LATER_VERSION(Version) ([[[UIDevice currentDevice] systemVersion] compare:@""#Version"" options:NSNumericSearch] == NSOrderedDescending)
+
+#define DK_IOS16_OR_LATER   ([[[UIDevice currentDevice] systemVersion] compare:@"16" options:NSNumericSearch] == NSOrderedDescending)
 #define DK_IOS15_OR_LATER   ([[[UIDevice currentDevice] systemVersion] compare:@"15" options:NSNumericSearch] == NSOrderedDescending)
 #define DK_IOS14_OR_LATER   ([[[UIDevice currentDevice] systemVersion] compare:@"14" options:NSNumericSearch] == NSOrderedDescending)
 #define DK_IOS13_OR_LATER   ([[[UIDevice currentDevice] systemVersion] compare:@"13" options:NSNumericSearch] == NSOrderedDescending)
@@ -103,29 +111,55 @@ isiPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.b
 
 
 /**
- *  size
+ *  Size
  */
-#define DK_StatusBarHeight ( [[UIApplication sharedApplication] statusBarFrame].size.height )
-#define DK_NavBarHeight    44
-#define DK_TabBarHeight    ( DK_ISIPHONE_X ? 83 : 50 )
-#define DK_BottomDangerAreaHeight   ( DK_ISIPHONE_X ? 34 : 0 )
-#define DK_TopAddDangerAreaHeight   ( DK_ISIPHONE_X ? 24 : 0 )
+#define DK_SCREEN_HEIGHT              ( [UIScreen mainScreen].bounds.size.height )
+#define DK_SCREEN_WIDTH               ( [UIScreen mainScreen].bounds.size.width )
 
-#define DK_SCREEN_HEIGHT   ([UIScreen mainScreen].bounds.size.height)
-#define DK_SCREEN_WIDTH    ([UIScreen mainScreen].bounds.size.width)
+#define DK_STATUS_BAR_HEIGHT          ( [[UIApplication sharedApplication] statusBarFrame].size.height )
+#define DK_NAV_BAR_HEIGHT             ( 44 )
+#define DK_TAB_BAR_HEIGHT             ( DK_ISIPHONE_X ? 83 : 50 )
+#define DK_TOP_SAFE_AREA_HEIGHT       ( DK_ISIPHONE_X ? 24 : 0 )
+#define DK_BOTTOM_SAFE_AREA_HEIGHT    ( DK_ISIPHONE_X ? 34 : 0 )
+
+
+/**
+ *  Orientation
+ */
+/// 当前是否是竖屏
+#define DK_IS_ORIENTATION_PORTRAIT    UIInterfaceOrientationIsPortrait([UIApplication sharedApplication].statusBarOrientation)
+
+/// 当前是否是横屏
+#define DK_IS_ORIENTATION_LANDSCAPE   UIInterfaceOrientationIsLandscape([UIApplication sharedApplication].statusBarOrientation)
+
+
+/**
+ *  Scale
+ */
+/// 根据 375*667(iPhone 6) 尺寸比例, 计算 size
+#define DK_SCALE_SIZE_FROM375(x)                ((x)*DK_SCREEN_WIDTH/375)
+/// 如果横屏显示
+#define DK_SCALE_SIZE_FROM375_IF_LANDSCAPE(x)   (DK_IS_ORIENTATION_LANDSCAPE ? ((x)*DK_SCREEN_HEIGHT/375) : DK_SCALE_SIZE_FROM375(x))
 
 
 /**
  *  Color
  */
-// RGB
+/// RGB
 #define DK_RGB(R, G, B)    [UIColor colorWithRed:R/255.0f green:G/255.0f blue:B/255.0f alpha:1.0f]
 #define DK_RGBA(R,G,B,A)   [UIColor colorWithRed:(R)/255.0f \
                         green:(G)/255.0f blue:(B)/255.0f alpha:(A)]
-#define DK_RGB_VALUE(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
-// 16进制颜色
-#define DK_COLOR_HEX(hex)  [UIColor colorWithRed:(((hex & 0xFF0000) >> 16))/255.0 green:(((hex &0xFF00) >>8))/255.0 blue:((hex &0xFF))/255.0 alpha:1.0]
-#define DK_COLOR_HEX_A(hex, a)  [UIColor colorWithRed:(((hex & 0xFF0000) >> 16))/255.0 green:(((hex &0xFF00) >>8))/255.0 blue:((hex &0xFF))/255.0 alpha:a]
+#define DK_RGB_VALUE(rgbValue)   [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+/// 16进制颜色
+//#define DK_COLOR_HEX(hex)             [UIColor colorWithRed:(((hex & 0xFF0000) >> 16))/255.0 green:(((hex &0xFF00) >>8))/255.0 blue:((hex &0xFF))/255.0 alpha:1.0]
+//#define DK_COLOR_HEX_A(hex, a)        [UIColor colorWithRed:(((hex & 0xFF0000) >> 16))/255.0 green:(((hex &0xFF00) >>8))/255.0 blue:((hex &0xFF))/255.0 alpha:a]
+
+/// Example: DK_COLOR_HEX(0xF0F),  DK_COLOR_HEX(0x66ccff), DK_COLOR_HEX(#66CCFF88)
+#define DK_COLOR_HEX(hex)   [UIColor dk_colorWithHexString: ((__bridge NSString *)CFSTR(#hex))]
+
+/// Example: #RGB: @"F0F" or @"0xF0F",  #ARGB: @"F0FC" or @"0xFF0F",  #RRGGBB: @"66ccff" or @"0x66ccff",  #AARRGGBB: @"66CCFF88" or @"0x66CCFF88"
+#define DK_COLOR_HEX_STR(hexString)   [UIColor dk_colorWithHexString: hexString]
 
 
 /**
@@ -189,16 +223,25 @@ __singleton__token__ ## __token = 0; \
 
 
 /**
- *  dynamic add Associated object propert
- *  Example:
-        @interface NSObject (MyAdd)
-        @property (nonatomic, retain) UIColor *myColor;
-        @end
+ *  Synthsize a dynamic Associated object property in @implementation scope
+ */
+
+/**
+ Synthsize a dynamic object property in @implementation scope.
+ It allows us to add custom properties to existing classes in categories.
  
-        #import <objc/runtime.h>
-        @implementation NSObject (MyAdd)
-        DK_SYNTH_DYNAMIC_PROPERTY_OBJECT(myColor, setMyColor, RETAIN, UIColor *)
-        @end
+ @param association  ASSIGN / RETAIN / COPY / RETAIN_NONATOMIC / COPY_NONATOMIC
+ @warning #import <objc/runtime.h>
+ *******************************************************************************
+ Example:
+     @interface NSObject (MyAdd)
+     @property (nonatomic, retain) UIColor *myColor;
+     @end
+     
+     #import <objc/runtime.h>
+     @implementation NSObject (MyAdd)
+     DK_SYNTH_DYNAMIC_PROPERTY_OBJECT(myColor, setMyColor, RETAIN, UIColor *)
+     @end
  */
 #ifndef DK_SYNTH_DYNAMIC_PROPERTY_OBJECT
 #define DK_SYNTH_DYNAMIC_PROPERTY_OBJECT(_getter_, _setter_, _association_, _type_) \
@@ -213,16 +256,20 @@ __singleton__token__ ## __token = 0; \
 #endif
 
 /**
- *  dynamic add Associated c propert
- *  Example:
-        @interface NSObject (MyAdd)
-        @property (nonatomic, retain) CGPoint myPoint;
-        @end
+ Synthsize a dynamic c type property in @implementation scope.
+ It allows us to add custom properties to existing classes in categories.
  
-        #import <objc/runtime.h>
-        @implementation NSObject (MyAdd)
-        DK_SYNTH_DYNAMIC_PROPERTY_CTYPE(myPoint, setMyPoint, CGPoint)
-        @end
+ @warning #import <objc/runtime.h>
+ *******************************************************************************
+ Example:
+     @interface NSObject (MyAdd)
+     @property (nonatomic, retain) CGPoint myPoint;
+     @end
+     
+     #import <objc/runtime.h>
+     @implementation NSObject (MyAdd)
+     DK_SYNTH_DYNAMIC_PROPERTY_CTYPE(myPoint, setMyPoint, CGPoint)
+     @end
  */
 #ifndef DK_SYNTH_DYNAMIC_PROPERTY_CTYPE
 #define DK_SYNTH_DYNAMIC_PROPERTY_CTYPE(_getter_, _setter_, _type_) \
@@ -273,6 +320,44 @@ __singleton__token__ ## __token = 0; \
     return self; \
 }
 #endif
+
+
+/**
+ Whether in main queue/thread.
+ */
+static inline bool dk_is_main_queue() {
+    return pthread_main_np() != 0;
+}
+
+/**
+ Submits a block for asynchronous execution on a main queue and returns immediately.
+ */
+static inline void dk_async_on_main_queue(void (^block)(void)) {
+    if (pthread_main_np()) {
+        block();
+    } else {
+        dispatch_async(dispatch_get_main_queue(), block);
+    }
+}
+
+/**
+ Submits a block for execution on a main queue and waits until the block completes.
+ */
+static inline void dk_sync_on_main_queue(void (^block)(void)) {
+    if (pthread_main_np()) {
+        block();
+    } else {
+        dispatch_sync(dispatch_get_main_queue(), block);
+    }
+}
+
+static inline bool dk_isIpad() {
+    NSString *deviceType = [UIDevice currentDevice].model;
+    if ([deviceType isEqualToString:@"iPad"]) {
+        return YES;
+    }
+    return NO;
+}
 
 #endif /* DKKitMacro_h */
 

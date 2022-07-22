@@ -52,27 +52,9 @@
       }
     },
     {
-      "name": "DefaultPlugins",
-      "dependencies": {
-        "DKSkynet/NetworkPlugins": [
-
-        ]
-      }
-    },
-    {
-      "name": "NetworkPlugins",
-      "subspecs": [
-        {
-          "name": "Common",
-          "public_header_files": "DKSkynet/Classes/NetworkPlugins/Common/**/*.{h}",
-          "source_files": "DKSkynet/Classes/NetworkPlugins/Common/**/*.{h,m}"
-        },
-        {
-          "name": "Monitor",
-          "public_header_files": "DKSkynet/Classes/NetworkPlugins/Monitor/**/*.{h}",
-          "source_files": "DKSkynet/Classes/NetworkPlugins/Monitor/**/*.{h,m}"
-        }
-      ]
+      "name": "Common",
+      "public_header_files": "DKSkynet/Classes/Common/**/*.{h}",
+      "source_files": "DKSkynet/Classes/Common/**/*.{h,m}"
     },
     {
       "name": "Store",
@@ -102,9 +84,48 @@
       ]
     },
     {
-      "name": "Common",
-      "public_header_files": "DKSkynet/Classes/Common/**/*.{h}",
-      "source_files": "DKSkynet/Classes/Common/**/*.{h,m}"
+      "name": "DefaultPlugins",
+      "dependencies": {
+        "DKSkynet/NetworkPlugins": [
+
+        ],
+        "DKSkynet/DatasInfoPlugins": [
+
+        ]
+      }
+    },
+    {
+      "name": "NetworkPlugins",
+      "subspecs": [
+        {
+          "name": "Common",
+          "public_header_files": "DKSkynet/Classes/NetworkPlugins/Common/**/*.{h}",
+          "source_files": "DKSkynet/Classes/NetworkPlugins/Common/**/*.{h,m}"
+        },
+        {
+          "name": "Monitor",
+          "public_header_files": "DKSkynet/Classes/NetworkPlugins/Monitor/**/*.{h}",
+          "source_files": "DKSkynet/Classes/NetworkPlugins/Monitor/**/*.{h,m}"
+        }
+      ]
+    },
+    {
+      "name": "DatasInfoPlugins",
+      "public_header_files": "DKSkynet/Classes/DatasInfoPlugins/Common/**/*.{h}",
+      "source_files": "DKSkynet/Classes/DatasInfoPlugins/Common/**/*.{h,m}",
+      "subspecs": [
+        {
+          "name": "Common"
+        },
+        {
+          "name": "SanboxBrowse",
+          "public_header_files": "DKSkynet/Classes/DatasInfoPlugins/SanboxBrowse/**/*.{h}",
+          "source_files": "DKSkynet/Classes/DatasInfoPlugins/SanboxBrowse/**/*.{h,m}",
+          "resource_bundles": {
+            "DKSanbox": "DKSkynet/Classes/DatasInfoPlugins/SanboxBrowse/Resources/**/*"
+          }
+        }
+      ]
     }
   ]
 }

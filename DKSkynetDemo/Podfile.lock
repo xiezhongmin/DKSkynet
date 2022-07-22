@@ -33,9 +33,24 @@ PODS:
     - DKSkynet/Common
     - DKSkynet/Store
     - SDWebImage
+  - DKSkynet/DatasInfoPlugins (0.0.1):
+    - DKAPMMonitor
+    - DKKit
+    - DKSkynet/DatasInfoPlugins/Common (= 0.0.1)
+    - DKSkynet/DatasInfoPlugins/SanboxBrowse (= 0.0.1)
+    - SDWebImage
+  - DKSkynet/DatasInfoPlugins/Common (0.0.1):
+    - DKAPMMonitor
+    - DKKit
+    - SDWebImage
+  - DKSkynet/DatasInfoPlugins/SanboxBrowse (0.0.1):
+    - DKAPMMonitor
+    - DKKit
+    - SDWebImage
   - DKSkynet/DefaultPlugins (0.0.1):
     - DKAPMMonitor
     - DKKit
+    - DKSkynet/DatasInfoPlugins
     - DKSkynet/NetworkPlugins
     - SDWebImage
   - DKSkynet/NetworkPlugins (0.0.1):
@@ -89,14 +104,14 @@ CHECKOUT OPTIONS:
     :commit: 1c33c12ff61cf5f50c1d8a161ac1b0bef3d8dfa9
     :git: https://github.com/xiezhongmin/DKMonitor.git
   DKKit:
-    :commit: 0b325b66372ad01589a36f8a0466601c1ef6f660
+    :commit: f82e6934ee513befdbd790effe771f959dfb9c7c
     :git: https://github.com/xiezhongmin/DKKit.git
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   DKAPMMonitor: 29aff5fb416d8e3faee02f7af69a17c6b14536a1
   DKKit: 4b08a83f5464ce4d4c9134e3da5d094bc1cfa17f
-  DKSkynet: 69ded38b3812eeff7950ff0e668712c6dc7086e6
+  DKSkynet: 8fbf360f673df05346a07241fad33b37a57628e2
   SDWebImage: 0905f1b7760fc8ac4198cae0036600d67478751e
 
 PODFILE CHECKSUM: 4b7811d97d380e3917469930470e5fb99dbd58f2

@@ -34,6 +34,8 @@
 #import "DKWeakProxy.h"
 #import "DKMethodsHooking.h"
 #import "NSDate+DKFormat.h"
+#import "UIColor+DKUtils.h"
+#import "NSString+DKUtils.h"
 
 #endif /* DKKit_h */
 

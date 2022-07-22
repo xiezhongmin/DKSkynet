@@ -94,7 +94,6 @@
 + (NSDate *)dk_dateWithString:(NSString *)dateString format:(NSString *)format {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:format];
-    [formatter setTimeZone:[NSTimeZone localTimeZone]];
     return [formatter dateFromString:dateString];
 }
 

@@ -42,7 +42,7 @@
         [button setBackgroundColor:DK_RGB(87, 250, 255)];
         [button setCornerRadius:8.f];
         [button addTarget:self action:@selector(sendNSURLConnectionButtonClick:) forControlEvents:UIControlEventTouchUpInside];
-        posY += DK_StatusBarHeight + DK_NavBarHeight + DK_TopAddDangerAreaHeight + margin;
+        posY += DK_STATUS_BAR_HEIGHT + DK_NAV_BAR_HEIGHT + margin;
         button.frame = CGRectMake(0, posY, witdh, height);
         button.centerX = self.view.width / 2;
         [self.view addSubview:button];

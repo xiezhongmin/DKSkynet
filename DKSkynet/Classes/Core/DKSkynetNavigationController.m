@@ -47,11 +47,11 @@
     if (point.x > CGRectGetWidth(screen) - [XFATLayoutAttributes itemImageWidth] / 2 - [XFATLayoutAttributes margin]) {
         point.x = CGRectGetWidth(screen) - [XFATLayoutAttributes itemImageWidth] / 2 - [XFATLayoutAttributes margin];
     }
-    if (point.y < [XFATLayoutAttributes margin] + [XFATLayoutAttributes itemImageWidth] / 2 + (DK_ISIPHONE_X? DK_TopAddDangerAreaHeight + 9 : 0)) {
-        point.y = [XFATLayoutAttributes margin] + [XFATLayoutAttributes itemImageWidth] / 2 + (DK_ISIPHONE_X? DK_TopAddDangerAreaHeight + 9 : 0);
+    if (point.y < [XFATLayoutAttributes margin] + [XFATLayoutAttributes itemImageWidth] / 2 + (DK_ISIPHONE_X ? DK_TOP_SAFE_AREA_HEIGHT  + 9 : 0)) {
+        point.y = [XFATLayoutAttributes margin] + [XFATLayoutAttributes itemImageWidth] / 2 + (DK_ISIPHONE_X ? DK_TOP_SAFE_AREA_HEIGHT + 9 : 0);
     }
-    if (point.y > CGRectGetHeight(screen) - [XFATLayoutAttributes itemImageWidth] / 2 - [XFATLayoutAttributes margin] - DK_BottomDangerAreaHeight) {
-        point.y = CGRectGetHeight(screen) - [XFATLayoutAttributes itemImageWidth] / 2 - [XFATLayoutAttributes margin] - DK_BottomDangerAreaHeight;
+    if (point.y > CGRectGetHeight(screen) - [XFATLayoutAttributes itemImageWidth] / 2 - [XFATLayoutAttributes margin] - DK_BOTTOM_SAFE_AREA_HEIGHT) {
+        point.y = CGRectGetHeight(screen) - [XFATLayoutAttributes itemImageWidth] / 2 - [XFATLayoutAttributes margin] - DK_BOTTOM_SAFE_AREA_HEIGHT;
     }
     return point;
 }

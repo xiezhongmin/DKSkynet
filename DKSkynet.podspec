@@ -38,20 +38,9 @@ Pod::Spec.new do |s|
       sp.dependency 'DKSkynet/Common'
   end
   
-  s.subspec 'DefaultPlugins' do |sp|
-    sp.dependency 'DKSkynet/NetworkPlugins'
-  end
-  
-  s.subspec 'NetworkPlugins' do |net|
-      net.subspec 'Common' do |com|
-          com.public_header_files = 'DKSkynet/Classes/NetworkPlugins/Common/**/*.{h}'
-          com.source_files = 'DKSkynet/Classes/NetworkPlugins/Common/**/*.{h,m}'
-      end
-      
-      net.subspec 'Monitor' do |mon|
-          mon.public_header_files = 'DKSkynet/Classes/NetworkPlugins/Monitor/**/*.{h}'
-          mon.source_files = 'DKSkynet/Classes/NetworkPlugins/Monitor/**/*.{h,m}'
-      end
+  s.subspec 'Common' do |com|
+      com.public_header_files = 'DKSkynet/Classes/Common/**/*.{h}'
+      com.source_files = 'DKSkynet/Classes/Common/**/*.{h,m}'
   end
   
   s.subspec 'Store' do |sp|
@@ -70,9 +59,37 @@ Pod::Spec.new do |s|
       end
   end
   
-  s.subspec 'Common' do |com|
-      com.public_header_files = 'DKSkynet/Classes/Common/**/*.{h}'
-      com.source_files = 'DKSkynet/Classes/Common/**/*.{h,m}'
+  s.subspec 'DefaultPlugins' do |sp|
+    sp.dependency 'DKSkynet/NetworkPlugins'
+    sp.dependency 'DKSkynet/DatasInfoPlugins'
+  end
+  
+  s.subspec 'NetworkPlugins' do |net|
+      net.subspec 'Common' do |com|
+          com.public_header_files = 'DKSkynet/Classes/NetworkPlugins/Common/**/*.{h}'
+          com.source_files = 'DKSkynet/Classes/NetworkPlugins/Common/**/*.{h,m}'
+      end
+      
+      net.subspec 'Monitor' do |mon|
+          mon.public_header_files = 'DKSkynet/Classes/NetworkPlugins/Monitor/**/*.{h}'
+          mon.source_files = 'DKSkynet/Classes/NetworkPlugins/Monitor/**/*.{h,m}'
+      end
+  end
+  
+  s.subspec 'DatasInfoPlugins' do |dat|
+      dat.subspec 'Common' do |com|
+          dat.public_header_files = 'DKSkynet/Classes/DatasInfoPlugins/Common/**/*.{h}'
+          dat.source_files = 'DKSkynet/Classes/DatasInfoPlugins/Common/**/*.{h,m}'
+      end
+      
+      dat.subspec 'SanboxBrowse' do |box|
+          box.public_header_files = 'DKSkynet/Classes/DatasInfoPlugins/SanboxBrowse/**/*.{h}'
+          box.source_files = 'DKSkynet/Classes/DatasInfoPlugins/SanboxBrowse/**/*.{h,m}'
+#          box.resource = 'DKSkynet/Classes/DatasInfoPlugins/SanboxBrowse/Resources/**/*'
+          box.resource_bundle = {
+              'DKSanbox' => 'DKSkynet/Classes/DatasInfoPlugins/SanboxBrowse/Resources/**/*'
+          }
+      end
   end
 
   s.dependency 'DKKit'
