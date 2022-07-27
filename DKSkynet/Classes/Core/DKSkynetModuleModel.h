@@ -22,6 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *superPluginId;
 @property (nonatomic, assign) BOOL isTop;
 @property (nonatomic, assign) BOOL isOn;
+@property (nonatomic, assign) BOOL isRunning;
 @property (nonatomic, strong) id slf;
 @property (nonatomic) void (*didStart)(id slf, SEL cmd, BOOL *isHightLight);
 @property (nonatomic) void (*didStop)(id slf, SEL cmd);

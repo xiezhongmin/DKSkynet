@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DKSettingPlugin1 : NSObject
+@interface DKSettingPlugin : NSObject
 
 @end
 

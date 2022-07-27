@@ -11,7 +11,7 @@
 		2395445E4F11C7697E559767 /* libPods-DKSkynetDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 656B295448276C43141FC363 /* libPods-DKSkynetDemoTests.a */; };
 		845670D428743E500038AFDB /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845670D328743E4F0038AFDB /* SettingViewController.m */; };
 		8495D2E0287FC7D9000C459D /* DKNetworkMonitorDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8495D2DF287FC7D9000C459D /* DKNetworkMonitorDemoViewController.m */; };
-		84A356E82844B703008CF80F /* DKSettingPlugin1.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A356E72844B703008CF80F /* DKSettingPlugin1.m */; };
+		84A356E82844B703008CF80F /* DKSettingPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A356E72844B703008CF80F /* DKSettingPlugin.m */; };
 		84FAA892283F60F900925BF6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FAA891283F60F900925BF6 /* AppDelegate.m */; };
 		84FAA898283F60F900925BF6 /* DKDemosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FAA897283F60F900925BF6 /* DKDemosViewController.m */; };
 		84FAA89B283F60F900925BF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FAA899283F60F900925BF6 /* Main.storyboard */; };
@@ -52,8 +52,8 @@
 		845670D328743E4F0038AFDB /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		8495D2DE287FC7D9000C459D /* DKNetworkMonitorDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKNetworkMonitorDemoViewController.h; sourceTree = "<group>"; };
 		8495D2DF287FC7D9000C459D /* DKNetworkMonitorDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKNetworkMonitorDemoViewController.m; sourceTree = "<group>"; };
-		84A356E62844B703008CF80F /* DKSettingPlugin1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKSettingPlugin1.h; sourceTree = "<group>"; };
-		84A356E72844B703008CF80F /* DKSettingPlugin1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKSettingPlugin1.m; sourceTree = "<group>"; };
+		84A356E62844B703008CF80F /* DKSettingPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKSettingPlugin.h; sourceTree = "<group>"; };
+		84A356E72844B703008CF80F /* DKSettingPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKSettingPlugin.m; sourceTree = "<group>"; };
 		84FAA88D283F60F900925BF6 /* DKSkynetDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DKSkynetDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FAA890283F60F900925BF6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84FAA891283F60F900925BF6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -116,8 +116,8 @@
 		84A356E92844BBB4008CF80F /* CustomPlugins */ = {
 			isa = PBXGroup;
 			children = (
-				84A356E62844B703008CF80F /* DKSettingPlugin1.h */,
-				84A356E72844B703008CF80F /* DKSettingPlugin1.m */,
+				84A356E62844B703008CF80F /* DKSettingPlugin.h */,
+				84A356E72844B703008CF80F /* DKSettingPlugin.m */,
 				845670D228743E4F0038AFDB /* SettingViewController.h */,
 				845670D328743E4F0038AFDB /* SettingViewController.m */,
 			);
@@ -464,7 +464,7 @@
 				84FAA898283F60F900925BF6 /* DKDemosViewController.m in Sources */,
 				84FAA892283F60F900925BF6 /* AppDelegate.m in Sources */,
 				845670D428743E500038AFDB /* SettingViewController.m in Sources */,
-				84A356E82844B703008CF80F /* DKSettingPlugin1.m in Sources */,
+				84A356E82844B703008CF80F /* DKSettingPlugin.m in Sources */,
 				84FAA8A3283F60FA00925BF6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

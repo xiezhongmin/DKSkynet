@@ -13,6 +13,7 @@
 #import "DKSkynetItemView.h"
 #import "DKSkynetPlugin.h"
 #import <DKKit.h>
+#import <DKSkynet/DKSkynetToastUtil.h>
 
 static double kDKSkynetHighMemoryUsage;
 @interface DKSkynetAssistiveTouch () <XFXFAssistiveTouchDelegate, XFATRootViewControllerDelegate>
@@ -23,6 +24,7 @@ static double kDKSkynetHighMemoryUsage;
 @property (nonatomic, assign) double highMemoryUsage;
 @property (nonatomic, strong) NSMutableArray <DKSkynetModuleModel *>*tempSubPlugins;
 @property (nonatomic, strong, readwrite) NSMutableArray <DKSkynetModuleModel *>*plugins;
+@property (nonatomic) dispatch_queue_t queue;
 
 @end
 
@@ -45,6 +47,8 @@ static double kDKSkynetHighMemoryUsage;
         kDKSkynetHighMemoryUsage = ([NSProcessInfo processInfo].physicalMemory / 1024 / 1024) / 2;
         self.plugins = [[NSMutableArray alloc] init];
         self.tempSubPlugins = [[NSMutableArray alloc] init];
+        dispatch_queue_attr_t attr = dispatch_queue_attr_make_with_qos_class(DISPATCH_QUEUE_SERIAL, QOS_CLASS_DEFAULT, 0);
+        self.queue = dispatch_queue_create("com.skynet.queue", attr);
     }
     return self;
 }
@@ -154,6 +158,23 @@ static double kDKSkynetHighMemoryUsage;
     }
 }
 
+- (void)stopPluginWithModel:(DKSkynetModuleModel *)model
+{
+    if (model && model.didStop && model.isRunning) {
+        model.isRunning = NO;
+        model.didStop(model.slf, @selector(pluginDidStop));
+    }
+}
+
+- (void)stopAllPlugins
+{
+    __weak typeof(self) wself = self;
+    [self enumeratePluginsUsingBlock:^(DKSkynetModuleModel *obj, BOOL *stop) {
+        __strong typeof(wself) sself = wself;
+        [sself stopPluginWithModel:obj];
+    }];
+}
+
 - (void)showTouch
 {
     DKSkynetNavigationController *nav = (DKSkynetNavigationController *)[[XFAssistiveTouch sharedInstance] navigationController];
@@ -172,23 +193,26 @@ static double kDKSkynetHighMemoryUsage;
 
 - (void)refreshAllModuleState
 {
-    [self.plugins enumerateObjectsUsingBlock:^(DKSkynetModuleModel   * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [self enumeratePluginsUsingBlock:^(DKSkynetModuleModel *obj, BOOL *stop) {
         if (obj.itemView) {
             [obj.itemView configWithModel:obj];
         }
     }];
 }
 
+- (void)enumeratePluginsUsingBlock:(void (NS_NOESCAPE ^)(DKSkynetModuleModel *obj, BOOL *stop))block
+{
+    [self _enumeratePlugins:self.plugins block:block];
+}
+
 - (void)linkedPlugins
 {
-    dispatch_queue_attr_t attr = dispatch_queue_attr_make_with_qos_class(DISPATCH_QUEUE_SERIAL, QOS_CLASS_DEFAULT, 0);
-    dispatch_queue_t queue = dispatch_queue_create("com.skynet.queue", attr);
-    dispatch_async(queue, ^{
-        NSLog(@"插件注册中...");
+    dispatch_async(self.queue, ^{
+        DKLogInfo(@"插件注册中...");
         NSMutableArray *header = self.plugins;
-        [self _linkedPluginsWithPlugins:self.plugins];
+        [self _linkedPlugins:self.plugins];
         self.plugins = header;
-        NSLog(@"插件注册成功!");
+        DKLogInfo(@"插件注册成功!");
     });
 }
 
@@ -203,8 +227,25 @@ static double kDKSkynetHighMemoryUsage;
     }
 }
 
-- (void)_linkedPluginsWithPlugins:(NSMutableArray <DKSkynetModuleModel *> *)plugins
-{
+- (void)_enumeratePlugins:(NSArray *)plugins block:(void (NS_NOESCAPE ^)(DKSkynetModuleModel *obj, BOOL *stop))block {
+    static BOOL stop = NO;
+    NSMutableArray *copyArray = plugins.mutableCopy;
+    while (copyArray.count) {
+        DKSkynetModuleModel *model = copyArray.firstObject;
+        if (block) {
+            DKLogInfo(@"遍历插件: %@", model.pluginName);
+            block(model, &stop);
+        }
+        
+        if (stop) return;
+        
+        [copyArray removeObject:model];
+        
+        [self _enumeratePlugins:model.subPlugins block:block];
+    }
+}
+
+- (void)_linkedPlugins:(NSMutableArray <DKSkynetModuleModel *> *)plugins {
     if (!self.tempSubPlugins.count || !plugins.count) {
         return;
     }
@@ -218,7 +259,7 @@ static double kDKSkynetHighMemoryUsage;
                 continue;
             }
             if (obj2.subPlugins.count) {
-                [self _linkedPluginsWithPlugins:obj2.subPlugins];
+                [self _linkedPlugins:obj2.subPlugins];
             }
         }
     }
@@ -314,6 +355,7 @@ static double kDKSkynetHighMemoryUsage;
         [[XFAssistiveTouch sharedInstance].navigationController pushViewController:viewController atPisition:position];
         return;
     } else if (!model.didStart) {
+        [DKSkynetToastUtil showToastBlack:@"此分组暂无内容" inView:self.dk_topViewController.view];
         DKLogWarn(@"此分组暂无内容");
         return;
     }
@@ -322,6 +364,7 @@ static double kDKSkynetHighMemoryUsage;
     
     if (model.didStart) {
         BOOL isOn = model.isOn;
+        model.isRunning = YES;
         model.didStart(model.slf, @selector(pluginDidStart:), &isOn);
         model.isOn = isOn;
         if (@available(iOS 10.0, *)) {

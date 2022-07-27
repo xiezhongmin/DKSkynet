@@ -21,6 +21,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)registerPluginWithModel:(DKSkynetModuleModel *)model;
 
+- (void)stopPluginWithModel:(DKSkynetModuleModel *)model;
+
+- (void)stopAllPlugins;
+
 - (void)showTouch;
 
 - (void)dismissTouch;

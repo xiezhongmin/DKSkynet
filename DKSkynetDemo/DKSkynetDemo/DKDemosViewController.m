@@ -11,6 +11,7 @@
 #import <DKSkynet/DKSkynetStorage.h>
 #import "DKNetworkMonitorDemoViewController.h"
 #import <DKKit/DKKitMacro.h>
+#import <DKSkynet/DKSkynet.h>
 
 static NSString const * kDKTableSectionTitleKey = @"title";
 static NSString const * kDKTableSectionRowsKey = @"rows";

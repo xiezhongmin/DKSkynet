@@ -96,6 +96,7 @@
     [[DKSkynetAssistiveTouch shared] dismissTouch];
     [[DKAPMResourceMonitor shared] stopMonitoring];
     [[DKAPMFPSMonitor shared] stopMonitoring];
+    [[DKSkynetAssistiveTouch shared] stopAllPlugins];
 }
 
 

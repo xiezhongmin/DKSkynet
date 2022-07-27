@@ -5,18 +5,18 @@
 //  Created by admin on 2022/5/30.
 //
 
-#import "DKSettingPlugin1.h"
+#import "DKSettingPlugin.h"
 #import <DKSkynetPlugin.h>
 #import <DKKit/DKKit.h>
 #import "SettingViewController.h"
 #import <XFAssistiveTouch.h>
 #import <DKSkynetAssistiveTouch.h>
 
-@interface DKSettingPlugin1 ()
+@interface DKSettingPlugin ()
 @property (nonatomic, weak) SettingViewController *viewController;
 @end
 
-@implementation DKSettingPlugin1 DK_SKYNET_DYNAMIC_REGISTER
+@implementation DKSettingPlugin DK_SKYNET_DYNAMIC_REGISTER
 
 + (NSString *)pluginId
 {
@@ -47,6 +47,14 @@
     } else {
         [_viewController dismissViewControllerAnimated:YES completion:nil];
     }
+}
+
+- (void)pluginDidStop
+{
+    if (_viewController) {
+        [_viewController dismissViewControllerAnimated:YES completion:nil];
+    }
+    NSLog(@"全部设置 - pluginDidStop");
 }
 
 @end
