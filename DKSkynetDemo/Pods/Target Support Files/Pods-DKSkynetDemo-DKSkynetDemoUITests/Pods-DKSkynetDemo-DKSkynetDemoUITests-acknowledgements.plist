@@ -248,7 +248,7 @@ THE SOFTWARE.
 			<key>License</key>
 			<string>MIT</string>
 			<key>Title</key>
-			<string>DKAPMMonitor</string>
+			<string>DKKit</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
@@ -459,7 +459,7 @@ THE SOFTWARE.
 			<key>License</key>
 			<string>MIT</string>
 			<key>Title</key>
-			<string>DKKit</string>
+			<string>DKMonitor</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>

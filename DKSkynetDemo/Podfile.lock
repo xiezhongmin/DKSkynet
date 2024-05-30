@@ -14,67 +14,73 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - DKAPMMonitor (0.0.1):
+  - DKKit (0.0.1)
+  - DKMonitor (0.0.1):
     - DKKit
-  - DKKit (0.1.0)
+    - DKMonitor/DKAPMMonitor (= 0.0.1)
+    - DKMonitor/DKStackBacktrack (= 0.0.1)
+  - DKMonitor/DKAPMMonitor (0.0.1):
+    - DKKit
+  - DKMonitor/DKStackBacktrack (0.0.1):
+    - DKKit
   - DKSkynet (0.0.1):
-    - DKAPMMonitor
     - DKKit
+    - DKMonitor
     - DKSkynet/Core (= 0.0.1)
     - DKSkynet/DefaultPlugins (= 0.0.1)
     - SDWebImage
   - DKSkynet/Common (0.0.1):
-    - DKAPMMonitor
     - DKKit
+    - DKMonitor
     - SDWebImage
   - DKSkynet/Core (0.0.1):
-    - DKAPMMonitor
     - DKKit
+    - DKMonitor
     - DKSkynet/Common
     - DKSkynet/Store
     - SDWebImage
   - DKSkynet/DatasInfoPlugins (0.0.1):
-    - DKAPMMonitor
     - DKKit
+    - DKMonitor
     - DKSkynet/DatasInfoPlugins/Common (= 0.0.1)
     - DKSkynet/DatasInfoPlugins/SanboxBrowse (= 0.0.1)
     - SDWebImage
   - DKSkynet/DatasInfoPlugins/Common (0.0.1):
-    - DKAPMMonitor
     - DKKit
+    - DKMonitor
     - SDWebImage
   - DKSkynet/DatasInfoPlugins/SanboxBrowse (0.0.1):
-    - DKAPMMonitor
     - DKKit
+    - DKMonitor
     - SDWebImage
   - DKSkynet/DefaultPlugins (0.0.1):
-    - DKAPMMonitor
     - DKKit
+    - DKMonitor
     - DKSkynet/DatasInfoPlugins
     - DKSkynet/NetworkPlugins
     - SDWebImage
   - DKSkynet/NetworkPlugins (0.0.1):
-    - DKAPMMonitor
     - DKKit
+    - DKMonitor
     - DKSkynet/NetworkPlugins/Common (= 0.0.1)
     - DKSkynet/NetworkPlugins/Monitor (= 0.0.1)
     - SDWebImage
   - DKSkynet/NetworkPlugins/Common (0.0.1):
-    - DKAPMMonitor
     - DKKit
+    - DKMonitor
     - SDWebImage
   - DKSkynet/NetworkPlugins/Monitor (0.0.1):
-    - DKAPMMonitor
     - DKKit
+    - DKMonitor
     - SDWebImage
   - DKSkynet/Store (0.0.1):
-    - DKAPMMonitor
     - DKKit
+    - DKMonitor
     - DKSkynet/Store/MTAppenderFile (= 0.0.1)
     - SDWebImage
   - DKSkynet/Store/MTAppenderFile (0.0.1):
-    - DKAPMMonitor
     - DKKit
+    - DKMonitor
     - SDWebImage
   - SDWebImage (5.12.5):
     - SDWebImage/Core (= 5.12.5)
@@ -82,8 +88,8 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
-  - DKAPMMonitor (from `https://github.com/xiezhongmin/DKMonitor.git`)
   - DKKit (from `https://github.com/xiezhongmin/DKKit.git`)
+  - DKMonitor (from `https://github.com/xiezhongmin/DKMonitor.git`)
   - DKSkynet (from `../`)
 
 SPEC REPOS:
@@ -92,28 +98,28 @@ SPEC REPOS:
     - SDWebImage
 
 EXTERNAL SOURCES:
-  DKAPMMonitor:
-    :git: https://github.com/xiezhongmin/DKMonitor.git
   DKKit:
     :git: https://github.com/xiezhongmin/DKKit.git
+  DKMonitor:
+    :git: https://github.com/xiezhongmin/DKMonitor.git
   DKSkynet:
     :path: "../"
 
 CHECKOUT OPTIONS:
-  DKAPMMonitor:
-    :commit: 1c33c12ff61cf5f50c1d8a161ac1b0bef3d8dfa9
-    :git: https://github.com/xiezhongmin/DKMonitor.git
   DKKit:
-    :commit: f82e6934ee513befdbd790effe771f959dfb9c7c
+    :commit: c9770cf572b1f7661290b2993038ccf0244688e3
     :git: https://github.com/xiezhongmin/DKKit.git
+  DKMonitor:
+    :commit: cfe21bb11d8be61cebc2a5a289e28c540cb8bba3
+    :git: https://github.com/xiezhongmin/DKMonitor.git
 
 SPEC CHECKSUMS:
-  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  DKAPMMonitor: 29aff5fb416d8e3faee02f7af69a17c6b14536a1
-  DKKit: 4b08a83f5464ce4d4c9134e3da5d094bc1cfa17f
-  DKSkynet: 8fbf360f673df05346a07241fad33b37a57628e2
+  AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  DKKit: 491ba63dcf08e5725cff8c6d22e52dc0c3715cd9
+  DKMonitor: c4e8ccb655394e490b5f3dd1484623fa86f6a875
+  DKSkynet: 770cdd2d15009a3c8e15e6a8d1dc0dbe5d2a3a68
   SDWebImage: 0905f1b7760fc8ac4198cae0036600d67478751e
 
-PODFILE CHECKSUM: 4b7811d97d380e3917469930470e5fb99dbd58f2
+PODFILE CHECKSUM: 05f4b196c0940de4ee0f8e111f6cb457ce7ab401
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.13.0

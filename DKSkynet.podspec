@@ -85,7 +85,6 @@ Pod::Spec.new do |s|
       dat.subspec 'SanboxBrowse' do |box|
           box.public_header_files = 'DKSkynet/Classes/DatasInfoPlugins/SanboxBrowse/**/*.{h}'
           box.source_files = 'DKSkynet/Classes/DatasInfoPlugins/SanboxBrowse/**/*.{h,m}'
-#          box.resource = 'DKSkynet/Classes/DatasInfoPlugins/SanboxBrowse/Resources/**/*'
           box.resource_bundle = {
               'DKSanbox' => 'DKSkynet/Classes/DatasInfoPlugins/SanboxBrowse/Resources/**/*'
           }
@@ -93,6 +92,6 @@ Pod::Spec.new do |s|
   end
 
   s.dependency 'DKKit'
-  s.dependency 'DKAPMMonitor'
+  s.dependency 'DKMonitor'
   s.dependency 'SDWebImage'
 end

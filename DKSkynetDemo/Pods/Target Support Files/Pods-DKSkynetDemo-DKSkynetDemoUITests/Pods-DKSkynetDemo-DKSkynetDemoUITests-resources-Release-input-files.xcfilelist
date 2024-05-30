@@ -1,4 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-DKSkynetDemo-DKSkynetDemoUITests/Pods-DKSkynetDemo-DKSkynetDemoUITests-resources.sh
-${PODS_CONFIGURATION_BUILD_DIR}/DKKit/DKKit.bundle
 ${PODS_ROOT}/../../DKSkynet/Resource/DKSkynet.bundle
 ${PODS_CONFIGURATION_BUILD_DIR}/DKSkynet/DKSanbox.bundle

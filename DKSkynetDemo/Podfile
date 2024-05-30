@@ -8,7 +8,7 @@ target 'DKSkynetDemo' do
 
   pod 'DKSkynet', :path=>'../'
   pod 'DKKit', :git=>'https://github.com/xiezhongmin/DKKit.git'
-  pod 'DKAPMMonitor', :git=>'https://github.com/xiezhongmin/DKMonitor.git'
+  pod 'DKMonitor', :git=>'https://github.com/xiezhongmin/DKMonitor.git'
   pod 'AFNetworking'
   
   target 'DKSkynetDemoTests' do
