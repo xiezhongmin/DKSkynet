@@ -7,7 +7,7 @@
 
 #import "DKSkynetItemView.h"
 #import "DKKit.h"
-#import <UIImageView+WebCache.h>
+#import "UIImageView+WebCache.h"
 
 @interface DKSkynetItemView ()
 @property (nonatomic, weak) UIImageView *imageView;
@@ -35,7 +35,9 @@
         imageView.frame = CGRectMake(margin, margin, width, height);
         [self addSubview:imageView];
         imageView.contentMode = UIViewContentModeScaleAspectFit;
-        imageView.image = [UIImage imageNamed:@"DKSkynet.bundle/iconfont_star"];
+        NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]] pathForResource:@"DKSkynet" ofType:@"bundle"]];
+        NSString *bundlePath = [bundle bundlePath];
+        imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@/iconfont_star", bundlePath]];
         imageView;
     });
     UILabel *titleLabel = ({
@@ -78,7 +80,9 @@
         if (model.pluginImageName) {
             [self setImage:model.pluginImageName];
         } else {
-            self.imageView.image = [UIImage imageNamed:@"DKSkynet.bundle/iconfont_star"];
+            NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]] pathForResource:@"DKSkynet" ofType:@"bundle"]];
+            NSString *bundlePath = [bundle bundlePath];
+            self.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@/iconfont_star", bundlePath]];
         }
         if (model.pluginName) {
             self.titleLabel.text = model.pluginName;
@@ -89,9 +93,12 @@
 }
 
 - (void)setImage:(NSString *)aStr {
-    if ([aStr.lowercaseString hasPrefix:@"http"]
-        || [aStr.lowercaseString hasPrefix:@"https"]) {
-        [self.imageView sd_setImageWithURL:[NSURL URLWithString:aStr] placeholderImage:[UIImage imageNamed:@"DKSkynet/iconfont_star"]];
+    
+    if ([aStr.lowercaseString hasPrefix:@"http://"]
+        || [aStr.lowercaseString hasPrefix:@"https://"]) {
+        NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]] pathForResource:@"DKSkynet" ofType:@"bundle"]];
+        NSString *bundlePath = [bundle bundlePath];
+        [self.imageView sd_setImageWithURL:[NSURL URLWithString:aStr] placeholderImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@/iconfont_star", bundlePath]]];
     }else {
         self.imageView.image = [UIImage imageNamed:aStr];
     }

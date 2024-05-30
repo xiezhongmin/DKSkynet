@@ -22,7 +22,9 @@
 
 + (NSString *)pluginImageName
 {
-    return @"DKSkynet.bundle/skynet_net";
+    NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]] pathForResource:@"DKSkynet" ofType:@"bundle"]];
+    NSString *bundlePath = [bundle bundlePath];
+    return [NSString stringWithFormat: @"%@/skynet_net", bundlePath];
 }
 
 + (BOOL)isTop
