@@ -12,7 +12,7 @@
 #import "XFATRootViewController+Model.h"
 #import "DKSkynetItemView.h"
 #import "DKSkynetPlugin.h"
-#import <DKKit.h>
+#import "DKKit.h"
 #import <DKSkynet/DKSkynetToastUtil.h>
 
 static double kDKSkynetHighMemoryUsage;

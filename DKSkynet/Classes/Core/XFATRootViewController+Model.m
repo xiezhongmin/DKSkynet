@@ -6,7 +6,7 @@
 //
 
 #import "XFATRootViewController+Model.h"
-#import <DKKit.h>
+#import "DKKit.h"
 
 @implementation XFATRootViewController (Model)
 

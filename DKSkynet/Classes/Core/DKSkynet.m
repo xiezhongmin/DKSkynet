@@ -9,8 +9,8 @@
 #import "DKSkynetAssistiveTouch.h"
 #import "DKSkynetModuleModel.h"
 #import "DKSkynetPlugin.h"
-#import <DKAPMMonitor.h>
-#import <DKKit.h>
+#import "DKAPMMonitor.h"
+#import "DKKit.h"
 
 @interface DKSkynet ()
 

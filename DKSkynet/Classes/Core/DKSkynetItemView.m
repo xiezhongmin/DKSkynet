@@ -6,7 +6,7 @@
 //
 
 #import "DKSkynetItemView.h"
-#import <DKKit.h>
+#import "DKKit.h"
 #import <UIImageView+WebCache.h>
 
 @interface DKSkynetItemView ()

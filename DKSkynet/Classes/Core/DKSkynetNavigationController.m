@@ -8,7 +8,7 @@
 #import "DKSkynetNavigationController.h"
 #import "XFAssistiveTouch.h"
 #import "DKSkynetAssistiveTouch.h"
-#import <DKKit.h>
+#import "DKKit.h"
 
 @interface DKSkynetNavigationController ()
 
