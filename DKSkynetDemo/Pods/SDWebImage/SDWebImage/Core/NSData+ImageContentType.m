@@ -37,6 +37,8 @@
         case 0x49:
         case 0x4D:
             return SDImageFormatTIFF;
+        case 0x42:
+            return SDImageFormatBMP;
         case 0x52: {
             if (data.length >= 12) {
                 //RIFF....WEBP
@@ -72,12 +74,14 @@
                     return SDImageFormatPDF;
                 }
             }
+            break;
         }
         case 0x3C: {
             // Check end with SVG tag
             if ([data rangeOfData:[kSVGTagEnd dataUsingEncoding:NSUTF8StringEncoding] options:NSDataSearchBackwards range: NSMakeRange(data.length - MIN(100, data.length), MIN(100, data.length))].location != NSNotFound) {
                 return SDImageFormatSVG;
             }
+            break;
         }
     }
     return SDImageFormatUndefined;
@@ -113,6 +117,12 @@
         case SDImageFormatSVG:
             UTType = kSDUTTypeSVG;
             break;
+        case SDImageFormatBMP:
+            UTType = kSDUTTypeBMP;
+            break;
+        case SDImageFormatRAW:
+            UTType = kSDUTTypeRAW;
+            break;
         default:
             // default is kUTTypeImage abstract type
             UTType = kSDUTTypeImage;
@@ -144,6 +154,10 @@
         imageFormat = SDImageFormatPDF;
     } else if (CFStringCompare(uttype, kSDUTTypeSVG, 0) == kCFCompareEqualTo) {
         imageFormat = SDImageFormatSVG;
+    } else if (CFStringCompare(uttype, kSDUTTypeBMP, 0) == kCFCompareEqualTo) {
+        imageFormat = SDImageFormatBMP;
+    } else if (UTTypeConformsTo(uttype, kSDUTTypeRAW)) {
+        imageFormat = SDImageFormatRAW;
     } else {
         imageFormat = SDImageFormatUndefined;
     }

@@ -12,6 +12,7 @@
 #import "DKNetworkMonitorDemoViewController.h"
 #import <DKKit/DKKitMacro.h>
 #import <DKSkynet/DKSkynet.h>
+#import "Envs.h"
 
 static NSString const * kDKTableSectionTitleKey = @"title";
 static NSString const * kDKTableSectionRowsKey = @"rows";
@@ -53,6 +54,12 @@ static NSString const * kDKTableRowClassKey = @"class";
     self.view.backgroundColor = DK_RGB(242, 242, 247);
     self.title = @"DKSkynet";
     NSLog(@"FileDir= %@", [DKSkynetStorage shared].storeDirectory);
+    [[NSNotificationCenter defaultCenter] addObserverForName:kDKEnvSwitchNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull notification) {
+        int env = [(NSNumber *)notification.object intValue];
+        NSLog(@"点了切换环境 value: %d", env);
+    }];
+    int currentEnv = [Envs currentEnv];
+    NSLog(@"获取当前环境 value: %d", currentEnv);
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView

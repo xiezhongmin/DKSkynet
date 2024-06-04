@@ -15,7 +15,7 @@
 #import "DKNetworkRecordsStorage.h"
 #import <DKSkynet/DKSkynetStorage.h>
 
-@interface DKSkynetNetworkMonitorPlugin () <DKNetworkRecorderDelegate>
+@interface DKSkynetNetworkMonitorPlugin () <DKNetworkRecorderDelegate, DKSkynetPlugin>
 
 @property (nonatomic, weak) DKNetworkMonitorViewController *viewController;
 
@@ -59,9 +59,7 @@
 
 + (NSString *)pluginImageName
 {
-    NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]] pathForResource:@"DKSkynet" ofType:@"bundle"]];
-    NSString *bundlePath = [bundle bundlePath];
-    return [NSString stringWithFormat: @"%@/skynet_net_monitor", bundlePath];
+    return [NSString stringWithFormat: @"%@/skynet_net_monitor", DK_SKYNET_BUNDLE_PATH];
 }
 
 - (void)pluginDidStart:(BOOL *)isHightLight

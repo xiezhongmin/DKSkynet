@@ -11,7 +11,7 @@
 #import "DKSanboxBrowseViewController.h"
 #import <DKKit/DKKit.h>
 
-@interface DKSkynetSanboxBrowsePlugin ()
+@interface DKSkynetSanboxBrowsePlugin ()<DKSkynetPlugin>
 
 @property (nonatomic, weak) DKSanboxBrowseViewController *viewController;
 

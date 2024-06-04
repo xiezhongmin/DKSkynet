@@ -99,10 +99,14 @@ EOM
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_ROOT}/../../DKSkynet/Resource/DKSkynet.bundle"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/DKSkynet/DKSanbox.bundle"
+  install_resource "${PODS_ROOT}/../../DKSkynet/Classes/EnvPlugins/Env/Envs.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "${PODS_ROOT}/../../DKSkynet/Resource/DKSkynet.bundle"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/DKSkynet/DKSanbox.bundle"
+  install_resource "${PODS_ROOT}/../../DKSkynet/Classes/EnvPlugins/Env/Envs.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

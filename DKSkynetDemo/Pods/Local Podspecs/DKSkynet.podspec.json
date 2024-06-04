@@ -91,6 +91,9 @@
         ],
         "DKSkynet/DatasInfoPlugins": [
 
+        ],
+        "DKSkynet/EnvPlugins": [
+
         ]
       }
     },
@@ -124,6 +127,22 @@
           "resource_bundles": {
             "DKSanbox": "DKSkynet/Classes/DatasInfoPlugins/SanboxBrowse/Resources/**/*"
           }
+        }
+      ]
+    },
+    {
+      "name": "EnvPlugins",
+      "public_header_files": "DKSkynet/Classes/EnvPlugins/Common/**/*.{h}",
+      "source_files": "DKSkynet/Classes/EnvPlugins/Common/**/*.{h,m}",
+      "subspecs": [
+        {
+          "name": "Common"
+        },
+        {
+          "name": "Env",
+          "public_header_files": "DKSkynet/Classes/EnvPlugins/Env/**/*.{h}",
+          "source_files": "DKSkynet/Classes/EnvPlugins/Env/**/*.{h,m}",
+          "resources": "DKSkynet/Classes/EnvPlugins/Env/Envs.bundle"
         }
       ]
     }

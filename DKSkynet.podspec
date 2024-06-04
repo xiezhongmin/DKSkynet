@@ -62,6 +62,7 @@ Pod::Spec.new do |s|
   s.subspec 'DefaultPlugins' do |sp|
     sp.dependency 'DKSkynet/NetworkPlugins'
     sp.dependency 'DKSkynet/DatasInfoPlugins'
+    sp.dependency 'DKSkynet/EnvPlugins'
   end
   
   s.subspec 'NetworkPlugins' do |net|
@@ -88,6 +89,19 @@ Pod::Spec.new do |s|
           box.resource_bundle = {
               'DKSanbox' => 'DKSkynet/Classes/DatasInfoPlugins/SanboxBrowse/Resources/**/*'
           }
+      end
+  end
+  
+  s.subspec 'EnvPlugins' do |env|
+      env.subspec 'Common' do |com|
+          env.public_header_files = 'DKSkynet/Classes/EnvPlugins/Common/**/*.{h}'
+          env.source_files = 'DKSkynet/Classes/EnvPlugins/Common/**/*.{h,m}'
+      end
+      
+      env.subspec 'Env' do |e|
+          e.public_header_files = 'DKSkynet/Classes/EnvPlugins/Env/**/*.{h}'
+          e.source_files = 'DKSkynet/Classes/EnvPlugins/Env/**/*.{h,m}'
+          e.resources = 'DKSkynet/Classes/EnvPlugins/Env/Envs.bundle'
       end
   end
 

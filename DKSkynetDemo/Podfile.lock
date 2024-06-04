@@ -57,7 +57,22 @@ PODS:
     - DKKit
     - DKMonitor
     - DKSkynet/DatasInfoPlugins
+    - DKSkynet/EnvPlugins
     - DKSkynet/NetworkPlugins
+    - SDWebImage
+  - DKSkynet/EnvPlugins (0.0.1):
+    - DKKit
+    - DKMonitor
+    - DKSkynet/EnvPlugins/Common (= 0.0.1)
+    - DKSkynet/EnvPlugins/Env (= 0.0.1)
+    - SDWebImage
+  - DKSkynet/EnvPlugins/Common (0.0.1):
+    - DKKit
+    - DKMonitor
+    - SDWebImage
+  - DKSkynet/EnvPlugins/Env (0.0.1):
+    - DKKit
+    - DKMonitor
     - SDWebImage
   - DKSkynet/NetworkPlugins (0.0.1):
     - DKKit
@@ -82,9 +97,9 @@ PODS:
     - DKKit
     - DKMonitor
     - SDWebImage
-  - SDWebImage (5.12.5):
-    - SDWebImage/Core (= 5.12.5)
-  - SDWebImage/Core (5.12.5)
+  - SDWebImage (5.19.2):
+    - SDWebImage/Core (= 5.19.2)
+  - SDWebImage/Core (5.19.2)
 
 DEPENDENCIES:
   - AFNetworking
@@ -117,8 +132,8 @@ SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
   DKKit: 491ba63dcf08e5725cff8c6d22e52dc0c3715cd9
   DKMonitor: c4e8ccb655394e490b5f3dd1484623fa86f6a875
-  DKSkynet: 770cdd2d15009a3c8e15e6a8d1dc0dbe5d2a3a68
-  SDWebImage: 0905f1b7760fc8ac4198cae0036600d67478751e
+  DKSkynet: b83c3b2dd6150f90403b4188a063992596477421
+  SDWebImage: dfe95b2466a9823cf9f0c6d01217c06550d7b29a
 
 PODFILE CHECKSUM: 05f4b196c0940de4ee0f8e111f6cb457ce7ab401
 

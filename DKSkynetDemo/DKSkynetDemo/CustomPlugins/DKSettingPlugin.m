@@ -12,7 +12,7 @@
 #import <XFAssistiveTouch.h>
 #import <DKSkynetAssistiveTouch.h>
 
-@interface DKSettingPlugin ()
+@interface DKSettingPlugin () <DKSkynetPlugin>
 @property (nonatomic, weak) SettingViewController *viewController;
 @end
 
@@ -30,9 +30,7 @@
 
 + (NSString *)pluginImageName
 {
-    NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]] pathForResource:@"DKSkynet" ofType:@"bundle"]];
-    NSString *bundlePath = [bundle bundlePath];
-    return [NSString stringWithFormat:@"%@/skynet_setting", bundlePath];
+    return [NSString stringWithFormat:@"%@/skynet_setting", DK_SKYNET_BUNDLE_PATH];
 }
 
 + (BOOL)isTop

@@ -8,6 +8,11 @@
 #import <Foundation/Foundation.h>
 #import "DKSkynet.h"
 
+/// - Bundle Path
+#define DK_SKYNET_BUNDLE_PATH \
+[[NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]] pathForResource:@"DKSkynet" ofType:@"bundle"]] bundlePath]\
+
+/// - 自动注册
 #define DK_SKYNET_DYNAMIC_REGISTER  \
 + (void)load { [DKSkynet registerPlugin: [[self alloc] init]]; }
 

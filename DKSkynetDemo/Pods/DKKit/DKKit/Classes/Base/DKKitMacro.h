@@ -325,7 +325,7 @@ __singleton__token__ ## __token = 0; \
 /**
  Whether in main queue/thread.
  */
-static inline bool dk_is_main_queue() {
+static inline bool dk_is_main_queue(void) {
     return pthread_main_np() != 0;
 }
 
@@ -351,7 +351,7 @@ static inline void dk_sync_on_main_queue(void (^block)(void)) {
     }
 }
 
-static inline bool dk_isIpad() {
+static inline bool dk_isIpad(void) {
     NSString *deviceType = [UIDevice currentDevice].model;
     if ([deviceType isEqualToString:@"iPad"]) {
         return YES;

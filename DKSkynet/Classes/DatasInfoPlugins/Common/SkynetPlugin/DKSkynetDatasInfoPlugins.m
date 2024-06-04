@@ -8,6 +8,10 @@
 #import "DKSkynetDatasInfoPlugins.h"
 #import <DKSkynetPlugin.h>
 
+@interface DKSkynetDatasInfoPlugins ()<DKSkynetPlugin>
+
+@end
+
 @implementation DKSkynetDatasInfoPlugins DK_SKYNET_DYNAMIC_REGISTER
 
 + (NSString *)pluginId
