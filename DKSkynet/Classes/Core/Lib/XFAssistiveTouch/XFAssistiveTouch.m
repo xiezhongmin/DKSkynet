@@ -39,6 +39,16 @@
                                                  selector:@selector(keyboardWillChangeFrame:)
                                                      name:UIKeyboardWillChangeFrameNotification
                                                    object:nil];
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(handleWindowNotification:)
+                                                     name:UIWindowDidBecomeKeyNotification
+                                                   object:nil];
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(handleWindowNotification:)
+                                                     name:UIWindowDidResignKeyNotification
+                                                   object:nil];
     }
     return self;
 }
@@ -47,10 +57,18 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
+- (void)handleWindowNotification:(NSNotification *)notif {
+    UIWindow *window = notif.object;
+    if (window == self.assistiveWindow) {
+        [[UIApplication sharedApplication].delegate.window makeKeyAndVisible];
+        
+    }
+}
+
 - (void)showAssistiveTouch {
     _assistiveWindow = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, [XFATLayoutAttributes itemImageWidth], [XFATLayoutAttributes itemImageWidth])];
     _assistiveWindow.center = _assistiveWindowPoint;
-    _assistiveWindow.windowLevel = CGFLOAT_MAX;
+    _assistiveWindow.windowLevel = UIWindowLevelStatusBar + 1;
     _assistiveWindow.backgroundColor = [UIColor clearColor];
     _assistiveWindow.rootViewController = _navigationController;
     _assistiveWindow.layer.masksToBounds = YES;

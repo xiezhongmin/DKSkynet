@@ -214,4 +214,8 @@ typedef NS_ENUM(NSInteger, XFATInnerCircle) {
     return layer;
 }
 
+- (void)setFrame:(CGRect)frame {
+    self.layer.frame = frame;
+}
+
 @end

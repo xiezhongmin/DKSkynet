@@ -19,7 +19,7 @@
 }
 
 + (NSString *)pluginImageName { 
-    return [NSString stringWithFormat: @"%@/skynet_net", DK_SKYNET_BUNDLE_PATH];
+    return @"https://i.loli.net/2019/07/01/5d19ceb94f01a84638.png";
 }
 
 + (NSString *)pluginName { 

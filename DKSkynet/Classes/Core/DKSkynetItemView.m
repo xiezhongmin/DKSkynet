@@ -36,7 +36,7 @@
         imageView.frame = CGRectMake(margin, margin, width, height);
         [self addSubview:imageView];
         imageView.contentMode = UIViewContentModeScaleAspectFit;
-        imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@/iconfont_star", DK_SKYNET_BUNDLE_PATH]];
+        imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@/skynet_star", DK_SKYNET_BUNDLE_PATH]];
         imageView;
     });
     UILabel *titleLabel = ({
@@ -79,7 +79,7 @@
         if (model.pluginImageName) {
             [self setImage:model.pluginImageName];
         } else {
-            self.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@/iconfont_star", DK_SKYNET_BUNDLE_PATH]];
+            self.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@/skynet_star", DK_SKYNET_BUNDLE_PATH]];
         }
         if (model.pluginName) {
             self.titleLabel.text = model.pluginName;
@@ -90,10 +90,9 @@
 }
 
 - (void)setImage:(NSString *)aStr {
-    
     if ([aStr.lowercaseString hasPrefix:@"http://"]
         || [aStr.lowercaseString hasPrefix:@"https://"]) {
-        [self.imageView sd_setImageWithURL:[NSURL URLWithString:aStr] placeholderImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@/iconfont_star", DK_SKYNET_BUNDLE_PATH]]];
+        [self.imageView sd_setImageWithURL:[NSURL URLWithString:aStr] placeholderImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@/skynet_star", DK_SKYNET_BUNDLE_PATH]]];
     }else {
         self.imageView.image = [UIImage imageNamed:aStr];
     }

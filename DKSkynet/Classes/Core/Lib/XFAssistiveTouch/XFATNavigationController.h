@@ -32,13 +32,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong, readonly) NSMutableArray<XFATViewController *> *viewControllers;
 @property (nonatomic, assign, readonly, getter=isShow) BOOL show;
-@property (nonatomic, assign) id<XFATNavigationControllerDelegate> delegate;
+@property (nonatomic, weak) id<XFATNavigationControllerDelegate> delegate;
 
 @end
 
 @interface XFATViewController (XFATNavigationControllerItem)
 
-@property (nonatomic, assign) XFATNavigationController *navigationController;
+@property (nonatomic, weak) XFATNavigationController *navigationController;
 
 @end
 

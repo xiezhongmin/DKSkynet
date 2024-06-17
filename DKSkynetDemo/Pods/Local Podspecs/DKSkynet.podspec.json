@@ -32,6 +32,9 @@
     ],
     "SDWebImage": [
 
+    ],
+    "LookinServer": [
+      "~> 0.9.3"
     ]
   },
   "subspecs": [
@@ -94,6 +97,12 @@
         ],
         "DKSkynet/EnvPlugins": [
 
+        ],
+        "DKSkynet/UIPlugins": [
+
+        ],
+        "DKSkynet/LookinPlugins": [
+
         ]
       }
     },
@@ -143,6 +152,31 @@
           "public_header_files": "DKSkynet/Classes/EnvPlugins/Env/**/*.{h}",
           "source_files": "DKSkynet/Classes/EnvPlugins/Env/**/*.{h,m}",
           "resources": "DKSkynet/Classes/EnvPlugins/Env/Envs.bundle"
+        }
+      ]
+    },
+    {
+      "name": "UIPlugins",
+      "public_header_files": "DKSkynet/Classes/UIPlugins/Common/**/*.{h}",
+      "source_files": "DKSkynet/Classes/UIPlugins/Common/**/*.{h,m}",
+      "subspecs": [
+        {
+          "name": "Common"
+        }
+      ]
+    },
+    {
+      "name": "LookinPlugins",
+      "public_header_files": "DKSkynet/Classes/LookinPlugins/Common/**/*.{h}",
+      "source_files": "DKSkynet/Classes/LookinPlugins/Common/**/*.{h,m}",
+      "subspecs": [
+        {
+          "name": "Common"
+        },
+        {
+          "name": "Lookin",
+          "public_header_files": "DKSkynet/Classes/LookinPlugins/Lookin/**/*.{h}",
+          "source_files": "DKSkynet/Classes/LookinPlugins/Lookin/**/*.{h,m}"
         }
       ]
     }

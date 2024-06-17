@@ -170,6 +170,7 @@
         }
         _viewControllers = [NSMutableArray arrayWithObject:_viewControllers.firstObject];
         [self invokeActionEndDelegate];
+        [[[[UIApplication sharedApplication] delegate] window] makeKeyAndVisible];
     }];
 }
 
