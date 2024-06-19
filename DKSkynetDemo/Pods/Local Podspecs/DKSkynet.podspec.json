@@ -37,11 +37,6 @@
       "~> 0.9.3"
     ]
   },
-  "configuration_pod_whitelist": {
-    "LookinServer": [
-      "debug"
-    ]
-  },
   "subspecs": [
     {
       "name": "Core",
