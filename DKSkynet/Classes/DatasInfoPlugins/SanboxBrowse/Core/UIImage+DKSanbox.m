@@ -13,7 +13,7 @@
 {
     if(name &&
        ![name isEqualToString:@""]) {
-        NSURL *url = [[NSBundle mainBundle] URLForResource:@"DKSanbox" withExtension:@"bundle"];
+        NSURL *url = [[NSBundle bundleForClass:NSClassFromString(@"DKSkynet")] URLForResource:@"DKSanbox" withExtension:@"bundle"];
         if(!url) return [UIImage new];
         NSBundle *imageBundle = [NSBundle bundleWithURL:url];
         UIImage *image = [UIImage imageNamed:name inBundle:imageBundle compatibleWithTraitCollection:nil];

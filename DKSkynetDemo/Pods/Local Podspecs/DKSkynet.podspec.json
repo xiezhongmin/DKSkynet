@@ -133,7 +133,9 @@
           "name": "SanboxBrowse",
           "public_header_files": "DKSkynet/Classes/DatasInfoPlugins/SanboxBrowse/**/*.{h}",
           "source_files": "DKSkynet/Classes/DatasInfoPlugins/SanboxBrowse/**/*.{h,m}",
-          "resources": "DKSkynet/Classes/DatasInfoPlugins/SanboxBrowse/Resources/*"
+          "resource_bundles": {
+            "DKSanbox": "DKSkynet/Classes/DatasInfoPlugins/SanboxBrowse/Resources/**/*"
+          }
         }
       ]
     },

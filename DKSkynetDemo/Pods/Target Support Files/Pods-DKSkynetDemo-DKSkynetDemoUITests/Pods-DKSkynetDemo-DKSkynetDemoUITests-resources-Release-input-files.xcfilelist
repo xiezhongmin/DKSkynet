@@ -1,5 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-DKSkynetDemo-DKSkynetDemoUITests/Pods-DKSkynetDemo-DKSkynetDemoUITests-resources.sh
 ${PODS_ROOT}/../../DKSkynet/Resource/DKSkynet.bundle
-${PODS_ROOT}/../../DKSkynet/Classes/DatasInfoPlugins/SanboxBrowse/Resources/DKSanbox.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/DKSkynet/DKSanbox.bundle
 ${PODS_ROOT}/../../DKSkynet/Classes/EnvPlugins/Env/Envs.bundle
 ${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.bundle
