@@ -28,36 +28,36 @@ PODS:
     - DKMonitor
     - DKSkynet/Core (= 0.0.1)
     - DKSkynet/DefaultPlugins (= 0.0.1)
-    - LookinServer (~> 0.9.3)
+    - LookinServer (~> 1.1.9)
     - SDWebImage
   - DKSkynet/Common (0.0.1):
     - DKKit
     - DKMonitor
-    - LookinServer (~> 0.9.3)
+    - LookinServer (~> 1.1.9)
     - SDWebImage
   - DKSkynet/Core (0.0.1):
     - DKKit
     - DKMonitor
     - DKSkynet/Common
     - DKSkynet/Store
-    - LookinServer (~> 0.9.3)
+    - LookinServer (~> 1.1.9)
     - SDWebImage
   - DKSkynet/DatasInfoPlugins (0.0.1):
     - DKKit
     - DKMonitor
     - DKSkynet/DatasInfoPlugins/Common (= 0.0.1)
     - DKSkynet/DatasInfoPlugins/SanboxBrowse (= 0.0.1)
-    - LookinServer (~> 0.9.3)
+    - LookinServer (~> 1.1.9)
     - SDWebImage
   - DKSkynet/DatasInfoPlugins/Common (0.0.1):
     - DKKit
     - DKMonitor
-    - LookinServer (~> 0.9.3)
+    - LookinServer (~> 1.1.9)
     - SDWebImage
   - DKSkynet/DatasInfoPlugins/SanboxBrowse (0.0.1):
     - DKKit
     - DKMonitor
-    - LookinServer (~> 0.9.3)
+    - LookinServer (~> 1.1.9)
     - SDWebImage
   - DKSkynet/DefaultPlugins (0.0.1):
     - DKKit
@@ -67,82 +67,84 @@ PODS:
     - DKSkynet/LookinPlugins
     - DKSkynet/NetworkPlugins
     - DKSkynet/UIPlugins
-    - LookinServer (~> 0.9.3)
+    - LookinServer (~> 1.1.9)
     - SDWebImage
   - DKSkynet/EnvPlugins (0.0.1):
     - DKKit
     - DKMonitor
     - DKSkynet/EnvPlugins/Common (= 0.0.1)
     - DKSkynet/EnvPlugins/Env (= 0.0.1)
-    - LookinServer (~> 0.9.3)
+    - LookinServer (~> 1.1.9)
     - SDWebImage
   - DKSkynet/EnvPlugins/Common (0.0.1):
     - DKKit
     - DKMonitor
-    - LookinServer (~> 0.9.3)
+    - LookinServer (~> 1.1.9)
     - SDWebImage
   - DKSkynet/EnvPlugins/Env (0.0.1):
     - DKKit
     - DKMonitor
-    - LookinServer (~> 0.9.3)
+    - LookinServer (~> 1.1.9)
     - SDWebImage
   - DKSkynet/LookinPlugins (0.0.1):
     - DKKit
     - DKMonitor
     - DKSkynet/LookinPlugins/Common (= 0.0.1)
     - DKSkynet/LookinPlugins/Lookin (= 0.0.1)
-    - LookinServer (~> 0.9.3)
+    - LookinServer (~> 1.1.9)
     - SDWebImage
   - DKSkynet/LookinPlugins/Common (0.0.1):
     - DKKit
     - DKMonitor
-    - LookinServer (~> 0.9.3)
+    - LookinServer (~> 1.1.9)
     - SDWebImage
   - DKSkynet/LookinPlugins/Lookin (0.0.1):
     - DKKit
     - DKMonitor
-    - LookinServer (~> 0.9.3)
+    - LookinServer (~> 1.1.9)
     - SDWebImage
   - DKSkynet/NetworkPlugins (0.0.1):
     - DKKit
     - DKMonitor
     - DKSkynet/NetworkPlugins/Common (= 0.0.1)
     - DKSkynet/NetworkPlugins/Monitor (= 0.0.1)
-    - LookinServer (~> 0.9.3)
+    - LookinServer (~> 1.1.9)
     - SDWebImage
   - DKSkynet/NetworkPlugins/Common (0.0.1):
     - DKKit
     - DKMonitor
-    - LookinServer (~> 0.9.3)
+    - LookinServer (~> 1.1.9)
     - SDWebImage
   - DKSkynet/NetworkPlugins/Monitor (0.0.1):
     - DKKit
     - DKMonitor
-    - LookinServer (~> 0.9.3)
+    - LookinServer (~> 1.1.9)
     - SDWebImage
   - DKSkynet/Store (0.0.1):
     - DKKit
     - DKMonitor
     - DKSkynet/Store/MTAppenderFile (= 0.0.1)
-    - LookinServer (~> 0.9.3)
+    - LookinServer (~> 1.1.9)
     - SDWebImage
   - DKSkynet/Store/MTAppenderFile (0.0.1):
     - DKKit
     - DKMonitor
-    - LookinServer (~> 0.9.3)
+    - LookinServer (~> 1.1.9)
     - SDWebImage
   - DKSkynet/UIPlugins (0.0.1):
     - DKKit
     - DKMonitor
     - DKSkynet/UIPlugins/Common (= 0.0.1)
-    - LookinServer (~> 0.9.3)
+    - LookinServer (~> 1.1.9)
     - SDWebImage
   - DKSkynet/UIPlugins/Common (0.0.1):
     - DKKit
     - DKMonitor
-    - LookinServer (~> 0.9.3)
+    - LookinServer (~> 1.1.9)
     - SDWebImage
-  - LookinServer (0.9.4)
+  - LookinServer (1.1.9):
+    - LookinServer/Core (= 1.1.9)
+  - LookinServer/Core (1.1.9)
   - SDWebImage (5.19.2):
     - SDWebImage/Core (= 5.19.2)
   - SDWebImage/Core (5.19.2)
@@ -167,8 +169,8 @@ SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
   DKKit: 491ba63dcf08e5725cff8c6d22e52dc0c3715cd9
   DKMonitor: c4e8ccb655394e490b5f3dd1484623fa86f6a875
-  DKSkynet: 56bfbcb2481371d7cda20230c687d8973ebf4d4a
-  LookinServer: 54eb99921647bda4068ff8776d842285e2bf0adb
+  DKSkynet: 3e553f9f0aefe702df593b6169db38ab3a276629
+  LookinServer: 2e633551ca5e6f24ecf055c5035f9dca8c3b8ddf
   SDWebImage: dfe95b2466a9823cf9f0c6d01217c06550d7b29a
 
 PODFILE CHECKSUM: 491c008ad1411b0b1038ddb6c09f1095659bf774

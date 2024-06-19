@@ -1,8 +1,7 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
 CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/DKSkynet
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/LookinServer"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/DKSkynet" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/DKKit" "${PODS_ROOT}/Headers/Public/DKMonitor" "${PODS_ROOT}/Headers/Public/DKSkynet" "${PODS_ROOT}/Headers/Public/SDWebImage"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/DKSkynet" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/DKKit" "${PODS_ROOT}/Headers/Public/DKMonitor" "${PODS_ROOT}/Headers/Public/DKSkynet" "${PODS_ROOT}/Headers/Public/LookinServer" "${PODS_ROOT}/Headers/Public/SDWebImage"
 OTHER_LDFLAGS = $(inherited) -l"c++"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

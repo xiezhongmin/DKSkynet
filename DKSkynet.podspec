@@ -129,5 +129,5 @@ Pod::Spec.new do |s|
     s.dependency 'DKKit'
     s.dependency 'DKMonitor'
     s.dependency 'SDWebImage'
-    s.dependency 'LookinServer', '~> 0.9.3'
+    s.dependency 'LookinServer', '~> 1.1.9'
 end

@@ -1,10 +1,8 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/LookinServer"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/DKKit" "${PODS_ROOT}/Headers/Public/DKMonitor" "${PODS_ROOT}/Headers/Public/DKSkynet" "${PODS_ROOT}/Headers/Public/SDWebImage"
-LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking" "${PODS_CONFIGURATION_BUILD_DIR}/DKKit" "${PODS_CONFIGURATION_BUILD_DIR}/DKMonitor" "${PODS_CONFIGURATION_BUILD_DIR}/DKSkynet" "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking" -l"DKKit" -l"DKMonitor" -l"DKSkynet" -l"SDWebImage" -l"c++" -l"z" -framework "AssetsLibrary" -framework "CoreFoundation" -framework "CoreGraphics" -framework "CoreImage" -framework "CoreText" -framework "ImageIO" -framework "LookinServer" -framework "QuartzCore" -framework "UIKit"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/DKKit" "${PODS_ROOT}/Headers/Public/DKMonitor" "${PODS_ROOT}/Headers/Public/DKSkynet" "${PODS_ROOT}/Headers/Public/LookinServer" "${PODS_ROOT}/Headers/Public/SDWebImage"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking" "${PODS_CONFIGURATION_BUILD_DIR}/DKKit" "${PODS_CONFIGURATION_BUILD_DIR}/DKMonitor" "${PODS_CONFIGURATION_BUILD_DIR}/DKSkynet" "${PODS_CONFIGURATION_BUILD_DIR}/LookinServer" "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking" -l"DKKit" -l"DKMonitor" -l"DKSkynet" -l"LookinServer" -l"SDWebImage" -l"c++" -l"z" -framework "AssetsLibrary" -framework "CoreFoundation" -framework "CoreGraphics" -framework "CoreImage" -framework "CoreText" -framework "ImageIO" -framework "QuartzCore" -framework "UIKit"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
