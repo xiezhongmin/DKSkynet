@@ -119,11 +119,6 @@ Pod::Spec.new do |s|
             loo.public_header_files = 'DKSkynet/Classes/LookinPlugins/Common/**/*.{h}'
             loo.source_files = 'DKSkynet/Classes/LookinPlugins/Common/**/*.{h,m}'
         end
-        
-        loo.subspec 'Lookin' do |l|
-            l.public_header_files = 'DKSkynet/Classes/LookinPlugins/Lookin/**/*.{h}'
-            l.source_files = 'DKSkynet/Classes/LookinPlugins/Lookin/**/*.{h,m}'
-        end
     end
     
     s.dependency 'DKKit'

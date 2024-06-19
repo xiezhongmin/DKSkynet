@@ -7,8 +7,8 @@
 
 #import "DKSkynetNetworkMonitorPlugin.h"
 #import "DKNetworkMonitorViewController.h"
-#import <DKSkynetPlugin.h>
-#import <DKSkynetAssistiveTouch.h>
+#import <DKSkynet/DKSkynetPlugin.h>
+#import <DKSkynet/DKSkynetAssistiveTouch.h>
 #import <DKKit/DKKit.h>
 #import "DKNetworkRecorder.h"
 #import "DKNetworkMonitor.h"

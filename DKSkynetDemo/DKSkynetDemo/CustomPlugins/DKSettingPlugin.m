@@ -6,7 +6,7 @@
 //
 
 #import "DKSettingPlugin.h"
-#import <DKSkynetPlugin.h>
+#import <DKSkynet/DKSkynetPlugin.h>
 #import <DKKit/DKKit.h>
 #import "SettingViewController.h"
 #import <XFAssistiveTouch.h>

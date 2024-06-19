@@ -90,15 +90,9 @@ PODS:
     - DKKit
     - DKMonitor
     - DKSkynet/LookinPlugins/Common (= 0.0.1)
-    - DKSkynet/LookinPlugins/Lookin (= 0.0.1)
     - LookinServer (~> 1.1.9)
     - SDWebImage
   - DKSkynet/LookinPlugins/Common (0.0.1):
-    - DKKit
-    - DKMonitor
-    - LookinServer (~> 1.1.9)
-    - SDWebImage
-  - DKSkynet/LookinPlugins/Lookin (0.0.1):
     - DKKit
     - DKMonitor
     - LookinServer (~> 1.1.9)
@@ -169,7 +163,7 @@ SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
   DKKit: 491ba63dcf08e5725cff8c6d22e52dc0c3715cd9
   DKMonitor: c4e8ccb655394e490b5f3dd1484623fa86f6a875
-  DKSkynet: 3e553f9f0aefe702df593b6169db38ab3a276629
+  DKSkynet: 8e66bb57bfe02c3cd4caa4ace5fb6c342c5b156d
   LookinServer: 2e633551ca5e6f24ecf055c5035f9dca8c3b8ddf
   SDWebImage: dfe95b2466a9823cf9f0c6d01217c06550d7b29a
 

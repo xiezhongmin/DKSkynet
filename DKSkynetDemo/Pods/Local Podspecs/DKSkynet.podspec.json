@@ -172,11 +172,6 @@
       "subspecs": [
         {
           "name": "Common"
-        },
-        {
-          "name": "Lookin",
-          "public_header_files": "DKSkynet/Classes/LookinPlugins/Lookin/**/*.{h}",
-          "source_files": "DKSkynet/Classes/LookinPlugins/Lookin/**/*.{h,m}"
         }
       ]
     }
