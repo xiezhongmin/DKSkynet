@@ -71,11 +71,15 @@ Pod::Spec.new do |s|
         net.subspec 'Common' do |com|
             com.public_header_files = 'DKSkynet/Classes/NetworkPlugins/Common/**/*.{h}'
             com.source_files = 'DKSkynet/Classes/NetworkPlugins/Common/**/*.{h,m}'
+            com.dependency 'DKSkynet/Store'
+            com.dependency 'DKSkynet/Common'
         end
         
         net.subspec 'Monitor' do |mon|
             mon.public_header_files = 'DKSkynet/Classes/NetworkPlugins/Monitor/**/*.{h}'
             mon.source_files = 'DKSkynet/Classes/NetworkPlugins/Monitor/**/*.{h,m}'
+            mon.dependency 'DKSkynet/Store'
+            mon.dependency 'DKSkynet/Common'
         end
     end
     
@@ -83,6 +87,8 @@ Pod::Spec.new do |s|
         dat.subspec 'Common' do |com|
             dat.public_header_files = 'DKSkynet/Classes/DatasInfoPlugins/Common/**/*.{h}'
             dat.source_files = 'DKSkynet/Classes/DatasInfoPlugins/Common/**/*.{h,m}'
+            dat.dependency 'DKSkynet/Store'
+            dat.dependency 'DKSkynet/Common'
         end
         
         dat.subspec 'SanboxBrowse' do |box|
@@ -91,6 +97,8 @@ Pod::Spec.new do |s|
             box.resource_bundle = {
                 'DKSanbox' => 'DKSkynet/Classes/DatasInfoPlugins/SanboxBrowse/Resources/**/*'
             }
+            box.dependency 'DKSkynet/Store'
+            box.dependency 'DKSkynet/Common'
         end
     end
     
@@ -98,12 +106,16 @@ Pod::Spec.new do |s|
         env.subspec 'Common' do |com|
             env.public_header_files = 'DKSkynet/Classes/EnvPlugins/Common/**/*.{h}'
             env.source_files = 'DKSkynet/Classes/EnvPlugins/Common/**/*.{h,m}'
+            env.dependency 'DKSkynet/Store'
+            env.dependency 'DKSkynet/Common'
         end
         
         env.subspec 'Env' do |e|
             e.public_header_files = 'DKSkynet/Classes/EnvPlugins/Env/**/*.{h}'
             e.source_files = 'DKSkynet/Classes/EnvPlugins/Env/**/*.{h,m}'
             e.resources = 'DKSkynet/Classes/EnvPlugins/Env/Envs.bundle'
+            e.dependency 'DKSkynet/Store'
+            e.dependency 'DKSkynet/Common'
         end
     end
     
@@ -111,6 +123,8 @@ Pod::Spec.new do |s|
         ui.subspec 'Common' do |com|
             ui.public_header_files = 'DKSkynet/Classes/UIPlugins/Common/**/*.{h}'
             ui.source_files = 'DKSkynet/Classes/UIPlugins/Common/**/*.{h,m}'
+            ui.dependency 'DKSkynet/Store'
+            ui.dependency 'DKSkynet/Common'
         end
     end
     
@@ -118,6 +132,8 @@ Pod::Spec.new do |s|
         loo.subspec 'Common' do |com|
             loo.public_header_files = 'DKSkynet/Classes/LookinPlugins/Common/**/*.{h}'
             loo.source_files = 'DKSkynet/Classes/LookinPlugins/Common/**/*.{h,m}'
+            loo.dependency 'DKSkynet/Store'
+            loo.dependency 'DKSkynet/Common'
         end
     end
     

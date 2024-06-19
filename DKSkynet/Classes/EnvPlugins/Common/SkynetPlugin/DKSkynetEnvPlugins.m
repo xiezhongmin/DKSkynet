@@ -6,7 +6,7 @@
 //
 
 #import "DKSkynetEnvPlugins.h"
-#import <DKSkynet/DKSkynetPlugin.h>
+#import <DKSkynetPlugin.h>
 #import "Envs.h"
 
 @interface DKSkynetEnvPlugins ()<DKSkynetPlugin>

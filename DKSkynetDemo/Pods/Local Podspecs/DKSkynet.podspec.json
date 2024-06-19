@@ -112,12 +112,28 @@
         {
           "name": "Common",
           "public_header_files": "DKSkynet/Classes/NetworkPlugins/Common/**/*.{h}",
-          "source_files": "DKSkynet/Classes/NetworkPlugins/Common/**/*.{h,m}"
+          "source_files": "DKSkynet/Classes/NetworkPlugins/Common/**/*.{h,m}",
+          "dependencies": {
+            "DKSkynet/Store": [
+
+            ],
+            "DKSkynet/Common": [
+
+            ]
+          }
         },
         {
           "name": "Monitor",
           "public_header_files": "DKSkynet/Classes/NetworkPlugins/Monitor/**/*.{h}",
-          "source_files": "DKSkynet/Classes/NetworkPlugins/Monitor/**/*.{h,m}"
+          "source_files": "DKSkynet/Classes/NetworkPlugins/Monitor/**/*.{h,m}",
+          "dependencies": {
+            "DKSkynet/Store": [
+
+            ],
+            "DKSkynet/Common": [
+
+            ]
+          }
         }
       ]
     },
@@ -125,6 +141,14 @@
       "name": "DatasInfoPlugins",
       "public_header_files": "DKSkynet/Classes/DatasInfoPlugins/Common/**/*.{h}",
       "source_files": "DKSkynet/Classes/DatasInfoPlugins/Common/**/*.{h,m}",
+      "dependencies": {
+        "DKSkynet/Store": [
+
+        ],
+        "DKSkynet/Common": [
+
+        ]
+      },
       "subspecs": [
         {
           "name": "Common"
@@ -135,6 +159,14 @@
           "source_files": "DKSkynet/Classes/DatasInfoPlugins/SanboxBrowse/**/*.{h,m}",
           "resource_bundles": {
             "DKSanbox": "DKSkynet/Classes/DatasInfoPlugins/SanboxBrowse/Resources/**/*"
+          },
+          "dependencies": {
+            "DKSkynet/Store": [
+
+            ],
+            "DKSkynet/Common": [
+
+            ]
           }
         }
       ]
@@ -143,6 +175,14 @@
       "name": "EnvPlugins",
       "public_header_files": "DKSkynet/Classes/EnvPlugins/Common/**/*.{h}",
       "source_files": "DKSkynet/Classes/EnvPlugins/Common/**/*.{h,m}",
+      "dependencies": {
+        "DKSkynet/Store": [
+
+        ],
+        "DKSkynet/Common": [
+
+        ]
+      },
       "subspecs": [
         {
           "name": "Common"
@@ -151,7 +191,15 @@
           "name": "Env",
           "public_header_files": "DKSkynet/Classes/EnvPlugins/Env/**/*.{h}",
           "source_files": "DKSkynet/Classes/EnvPlugins/Env/**/*.{h,m}",
-          "resources": "DKSkynet/Classes/EnvPlugins/Env/Envs.bundle"
+          "resources": "DKSkynet/Classes/EnvPlugins/Env/Envs.bundle",
+          "dependencies": {
+            "DKSkynet/Store": [
+
+            ],
+            "DKSkynet/Common": [
+
+            ]
+          }
         }
       ]
     },
@@ -159,6 +207,14 @@
       "name": "UIPlugins",
       "public_header_files": "DKSkynet/Classes/UIPlugins/Common/**/*.{h}",
       "source_files": "DKSkynet/Classes/UIPlugins/Common/**/*.{h,m}",
+      "dependencies": {
+        "DKSkynet/Store": [
+
+        ],
+        "DKSkynet/Common": [
+
+        ]
+      },
       "subspecs": [
         {
           "name": "Common"
@@ -169,6 +225,14 @@
       "name": "LookinPlugins",
       "public_header_files": "DKSkynet/Classes/LookinPlugins/Common/**/*.{h}",
       "source_files": "DKSkynet/Classes/LookinPlugins/Common/**/*.{h,m}",
+      "dependencies": {
+        "DKSkynet/Store": [
+
+        ],
+        "DKSkynet/Common": [
+
+        ]
+      },
       "subspecs": [
         {
           "name": "Common"
