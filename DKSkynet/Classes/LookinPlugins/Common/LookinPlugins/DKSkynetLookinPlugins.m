@@ -6,7 +6,7 @@
 //
 
 #import "DKSkynetLookinPlugins.h"
-#import <DKSkynetPlugin.h>
+#import <DKSkynet/DKSkynetPlugin.h>
 
 /// - Lookin - 2D
 @interface DKSkynetLookin2DPlugins: NSObject<DKSkynetPlugin>

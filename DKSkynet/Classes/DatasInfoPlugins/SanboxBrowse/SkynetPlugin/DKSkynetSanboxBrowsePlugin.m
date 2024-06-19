@@ -6,8 +6,8 @@
 //
 
 #import "DKSkynetSanboxBrowsePlugin.h"
-#import <DKSkynetPlugin.h>
-#import <DKSkynetAssistiveTouch.h>
+#import <DKSkynet/DKSkynetPlugin.h>
+#import <DKSkynet/DKSkynetAssistiveTouch.h>
 #import "DKSanboxBrowseViewController.h"
 #import <DKKit/DKKit.h>
 

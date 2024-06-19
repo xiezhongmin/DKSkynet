@@ -7,13 +7,13 @@
 
 #import "DKSkynetNetworkMonitorPlugin.h"
 #import "DKNetworkMonitorViewController.h"
-#import <DKSkynetPlugin.h>
-#import <DKSkynetAssistiveTouch.h>
+#import <DKSkynet/DKSkynetPlugin.h>
+#import <DKSkynet/DKSkynetAssistiveTouch.h>
 #import <DKKit/DKKit.h>
 #import "DKNetworkRecorder.h"
 #import "DKNetworkMonitor.h"
 #import "DKNetworkRecordsStorage.h"
-#import <DKSkynetStorage.h>
+#import <DKSkynet/DKSkynetStorage.h>
 
 @interface DKSkynetNetworkMonitorPlugin () <DKNetworkRecorderDelegate, DKSkynetPlugin>
 
