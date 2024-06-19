@@ -25,7 +25,7 @@ mtaf_log_appender *mtaf_log_appender_create(bool shared_thread);
 
 void mtaf_log_appender_destroy(mtaf_log_appender *mlog);
 
-void mtaf_log_appender_open(mtaf_log_appender *mlog, mtaf_append_mode _mode, const char *filedir, const char *filename);
+void mtaf_log_appender_open(mtaf_log_appender *mlog, enum mtaf_append_mode _mode, const char *filedir, const char *filename);
 
 void mtaf_log_appender_append(mtaf_log_appender *mlog, const char *log);
 
@@ -33,7 +33,7 @@ void mtaf_log_appender_append_ex(mtaf_log_appender *mlog, const char *log, const
 
 void mtaf_log_appender_close(mtaf_log_appender *mlog);
 
-void mtaf_log_appender_setmode(mtaf_log_appender *mlog, mtaf_append_mode _mode);
+void mtaf_log_appender_setmode(mtaf_log_appender *mlog, enum mtaf_append_mode _mode);
 
 void mtaf_log_appender_set_console_log(mtaf_log_appender *mlog, bool _is_open);
 
