@@ -6,7 +6,6 @@
 //
 
 #import "AppDelegate.h"
-#import <DKSkynet.h>
 
 @interface AppDelegate ()
 
@@ -15,9 +14,9 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
     
-    [[DKSkynet shared] startServer];
+    /// 无侵入方案
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"dk_skynet_open" object:nil];
 
     return YES;
 }

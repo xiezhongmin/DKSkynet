@@ -34,8 +34,22 @@
     self = [super init];
     if (self) {
         [[DKSkynetAssistiveTouch shared] install];
+        [self installNotification];
     }
     return self;
+}
+
+- (void)installNotification {
+    @weakify(self)
+    [[NSNotificationCenter defaultCenter] addObserverForName:DK_SKYNET_OPEN  object:nil queue:nil usingBlock:^(NSNotification * _Nonnull notification) {
+        @strongify(self)
+        [self startServer];
+    }];
+    
+    [[NSNotificationCenter defaultCenter] addObserverForName:DK_SKYNET_STOP  object:nil queue:nil usingBlock:^(NSNotification * _Nonnull notification) {
+        @strongify(self)
+        [self stopServer];
+    }];
 }
 
 + (void)registerPlugin:(id <DKSkynetPlugin>)plugin

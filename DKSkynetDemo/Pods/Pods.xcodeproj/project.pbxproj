@@ -387,6 +387,7 @@
 		AC82A084469DC1F3ECE7CB1147F4B046 /* UITextView+LookinServer.m in Sources */ = {isa = PBXBuildFile; fileRef = F0BD03D608481FDCD37E1EAC72309551 /* UITextView+LookinServer.m */; };
 		AC990C6444D27883A0DEDF03F41147D4 /* DKSkynetEnvPlugins.h in Headers */ = {isa = PBXBuildFile; fileRef = B929AFEF7FCFF50C1AFB45D3B683A49F /* DKSkynetEnvPlugins.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		AC9AE422C07481A11405EC23E6E99A85 /* LKS_PerspectiveDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 693DEC5322F9A3D6A4B783C0D93E10D5 /* LKS_PerspectiveDataSource.m */; };
+		ACDF7A802C2C08E30030530E /* DKSkynet+Server.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDF7A7E2C2C08E30030530E /* DKSkynet+Server.m */; };
 		AD6A6C552E8F5FDB7B0562C2ED45C0F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E8D13BA5A1038D93AF8A8A6F2F1544C /* Assets.xcassets */; };
 		ADDCC6428DEC2DCBF1F52410628DE0D2 /* LookinTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = C37332E515F7107B64ECD170F2CF86E8 /* LookinTuple.m */; };
 		ADFA2BFAEE163BACB95AF4D402D45E8A /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = D842F2723253F13DD37A3E34703A86C2 /* UIImage+GIF.m */; };
@@ -762,7 +763,7 @@
 		0FD1D60A1D8490A9D0D06D971061F46A /* DKAPMCPUUsage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DKAPMCPUUsage.h; path = Modules/DKAPMMonitor/Classes/Resource/DKAPMCPUUsage.h; sourceTree = "<group>"; };
 		10CBD0253E42FD13E50ECE9B8686F1D8 /* NSObject+DKRuntime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+DKRuntime.h"; path = "DKKit/Classes/Base/Foundation/NSObject+DKRuntime.h"; sourceTree = "<group>"; };
 		117D5772BAB102DC10A591CF173D7E6A /* DKURLSessionTaskMetrics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DKURLSessionTaskMetrics.h; sourceTree = "<group>"; };
-		11CC7FB2520B689DC2E0EEE4C70FF07D /* __mtaf_assert.c */ = {isa = PBXFileReference; includeInIndex = 1; path = __mtaf_assert.c; sourceTree = "<group>"; };
+		11CC7FB2520B689DC2E0EEE4C70FF07D /* __mtaf_assert.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = __mtaf_assert.c; sourceTree = "<group>"; };
 		12A71FFA859C5C56FEA71DADB789596C /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
 		12F6C6DB61A945BA7CE12E615FC3BFA4 /* Pods-DKSkynetDemo-DKSkynetDemoUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DKSkynetDemo-DKSkynetDemoUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		133EE28EC5F86BC98FA857D03265595F /* SDWebImageIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageIndicator.h; path = SDWebImage/Core/SDWebImageIndicator.h; sourceTree = "<group>"; };
@@ -780,7 +781,7 @@
 		18EF3285A141165B076A3DA528BD3843 /* Pods-DKSkynetDemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DKSkynetDemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		18FD14B1278AF66F53E1380C7FA29154 /* DKNetworkObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DKNetworkObserver.h; sourceTree = "<group>"; };
 		194B947FE099D9BC64F4E2CE73811B44 /* SDAnimatedImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImageView.m; path = SDWebImage/Core/SDAnimatedImageView.m; sourceTree = "<group>"; };
-		19576AE0F72558078EBA4068D8526482 /* mtaf_autobuffer.cc */ = {isa = PBXFileReference; includeInIndex = 1; path = mtaf_autobuffer.cc; sourceTree = "<group>"; };
+		19576AE0F72558078EBA4068D8526482 /* mtaf_autobuffer.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = mtaf_autobuffer.cc; sourceTree = "<group>"; };
 		19606CAE8DEE02A0C8A94CA7DC501578 /* SDImageCacheConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCacheConfig.m; path = SDWebImage/Core/SDImageCacheConfig.m; sourceTree = "<group>"; };
 		19C982B51C1789E279E5F920046CCD72 /* LKS_PerspectiveHierarchyCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKS_PerspectiveHierarchyCell.h; path = Src/Main/Server/Perspective/LKS_PerspectiveHierarchyCell.h; sourceTree = "<group>"; };
 		19E175C14381112E362CB30EF94BC70E /* NSSet+Lookin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSSet+Lookin.m"; path = "Src/Main/Shared/Category/NSSet+Lookin.m"; sourceTree = "<group>"; };
@@ -794,7 +795,7 @@
 		1E8D13BA5A1038D93AF8A8A6F2F1544C /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = DKSkynet/Classes/DatasInfoPlugins/SanboxBrowse/Resources/Assets.xcassets; sourceTree = "<group>"; };
 		1EE05A180798653F3F9FFEA252312552 /* NSDate+DKFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+DKFormat.m"; path = "DKKit/Classes/Base/Foundation/NSDate+DKFormat.m"; sourceTree = "<group>"; };
 		1F08FD3875D349D6C34472BEA1C94553 /* UIColor+DKUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+DKUtils.m"; path = "DKKit/Classes/Base/UIKit/UIColor+DKUtils.m"; sourceTree = "<group>"; };
-		1FC470E4D1796A21CE82213D161B2D5D /* DKSkynet.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DKSkynet.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1FC470E4D1796A21CE82213D161B2D5D /* DKSkynet.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DKSkynet.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		21919616241F0966B58E4EB1B35D012C /* UIImage+MemoryCacheCost.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MemoryCacheCost.h"; path = "SDWebImage/Core/UIImage+MemoryCacheCost.h"; sourceTree = "<group>"; };
 		220F032A69CAB665D27F83307957BC7E /* DKTextSizeCalculate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DKTextSizeCalculate.h; path = DKKit/Classes/Utility/DKTextSizeCalculate.h; sourceTree = "<group>"; };
 		2229573DC1838623F934DEC63040AF52 /* NSArray+Lookin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Lookin.m"; path = "Src/Main/Shared/Category/NSArray+Lookin.m"; sourceTree = "<group>"; };
@@ -892,13 +893,13 @@
 		496ECE4954B26115FB70AF48322BEB90 /* SDImageGraphics.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageGraphics.m; path = SDWebImage/Core/SDImageGraphics.m; sourceTree = "<group>"; };
 		4998ED13B2FFB86D60A0E3E3618FF586 /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImagePrefetcher.h; path = SDWebImage/Core/SDWebImagePrefetcher.h; sourceTree = "<group>"; };
 		499FEF1FF03FAB40E6C4AFD7E373F9BB /* SDWebImageTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageTransition.h; path = SDWebImage/Core/SDWebImageTransition.h; sourceTree = "<group>"; };
-		49D4C80714840702126DF4DEF12C39DB /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = WebImage/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		49D4C80714840702126DF4DEF12C39DB /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = WebImage/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		49E9EFE38263CF68C223D8374CA7056D /* DKSkynetWebViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DKSkynetWebViewController.h; sourceTree = "<group>"; };
 		49F66855F7B5A93AF8230BFA4F7E803E /* NSString+DKSize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+DKSize.h"; path = "DKKit/Classes/Base/Foundation/NSString+DKSize.h"; sourceTree = "<group>"; };
 		4A07D8FC9531598DB2528BC129A01B5C /* LookinObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LookinObject.h; path = Src/Main/Shared/LookinObject.h; sourceTree = "<group>"; };
 		4A6580D3F47C5259794497683E04AFD4 /* DKNetworkMonitorDetailWebCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DKNetworkMonitorDetailWebCell.h; sourceTree = "<group>"; };
 		4AEA6BB061F3EE7C9407B8DA111AF1B6 /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/Core/SDWebImageCompat.h; sourceTree = "<group>"; };
-		4AF79F12151CE3A38EBFD612EBE20A45 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		4AF79F12151CE3A38EBFD612EBE20A45 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		4B3EA3AE7A8C28E88F93903A3F857F48 /* SDImageCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCoder.m; path = SDWebImage/Core/SDImageCoder.m; sourceTree = "<group>"; };
 		4C0FE628579A93C1647BA27FDE13B660 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		4C14192825EB846F64294D341D78EC92 /* UIColor+LookinServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+LookinServer.m"; path = "Src/Main/Server/Category/UIColor+LookinServer.m"; sourceTree = "<group>"; };
@@ -911,7 +912,7 @@
 		4FAFBE01C239D929CB38259A9083D10B /* SDWeakProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWeakProxy.m; path = SDWebImage/Private/SDWeakProxy.m; sourceTree = "<group>"; };
 		51525FC2B0488B3E2C0F7DDBCBC51917 /* SDImageGraphics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageGraphics.h; path = SDWebImage/Core/SDImageGraphics.h; sourceTree = "<group>"; };
 		5243EFF6100A608AE9E98332CD63CCC3 /* LKS_PerspectiveLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKS_PerspectiveLayer.m; path = Src/Main/Server/Perspective/LKS_PerspectiveLayer.m; sourceTree = "<group>"; };
-		5251A8D130B7B48E909B41EAD3F03BCD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		5251A8D130B7B48E909B41EAD3F03BCD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		525B97EC9BE00BD3BB5C3894AC16A869 /* DKSkynetStorage+MMAP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DKSkynetStorage+MMAP.h"; path = "DKSkynet/Classes/Store/DKSkynetStorage+MMAP.h"; sourceTree = "<group>"; };
 		526A8FEB22DD53AF021BE96BCE93C63A /* NSAttributedString+DKAttributed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+DKAttributed.h"; path = "DKKit/Classes/Base/Foundation/NSAttributedString+DKAttributed.h"; sourceTree = "<group>"; };
 		528AC37608F8910601F6F7E8D89E5696 /* SDInternalMacros.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDInternalMacros.m; path = SDWebImage/Private/SDInternalMacros.m; sourceTree = "<group>"; };
@@ -1026,7 +1027,7 @@
 		79DC6057DDE74AAECACD9C41EE66840F /* DKNetworkMonitorDetailViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DKNetworkMonitorDetailViewController.h; sourceTree = "<group>"; };
 		7A3C673099810DC005216A3EE22A6995 /* XFATPosition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFATPosition.m; sourceTree = "<group>"; };
 		7B2EDC6907DC8543EFF105BCDEC3E14B /* Pods-DKSkynetDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DKSkynetDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7BA0250B70984CBD7FF73DB706A138C0 /* MTAppenderFile.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = MTAppenderFile.mm; sourceTree = "<group>"; };
+		7BA0250B70984CBD7FF73DB706A138C0 /* MTAppenderFile.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = MTAppenderFile.mm; sourceTree = "<group>"; };
 		7BC6C0BF8393CB65328CE55A59AE5AFF /* DKKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DKKit-prefix.pch"; sourceTree = "<group>"; };
 		7C39DDDDB6CEAC1EBFDB97D230B1B92F /* mtaf_mmap_file.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = mtaf_mmap_file.cpp; sourceTree = "<group>"; };
 		7CA9E6490FB518279D9CF59BBFE05CA3 /* DKNetworkMonitorViewModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DKNetworkMonitorViewModel.h; sourceTree = "<group>"; };
@@ -1093,7 +1094,7 @@
 		9C153BFFB899FC89B151B172D4FC6009 /* NSArray+DKModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+DKModel.h"; path = "DKKit/Classes/Model/NSArray+DKModel.h"; sourceTree = "<group>"; };
 		9CD08A7A21754022569B011DEDD45849 /* SDDeviceHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDDeviceHelper.h; path = SDWebImage/Private/SDDeviceHelper.h; sourceTree = "<group>"; };
 		9D153C42072B33B277C1BC4F6FDB678F /* mtaf_spinlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = mtaf_spinlock.h; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EB9D7762F36E4E09D8EC0E6EB59C737 /* DKSkynetDatasInfoPlugins.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DKSkynetDatasInfoPlugins.m; path = DKSkynet/Classes/DatasInfoPlugins/Common/SkynetPlugin/DKSkynetDatasInfoPlugins.m; sourceTree = "<group>"; };
 		A0115166D615D62BF5FF06D1676A34EB /* NSDictionary+DKBlock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+DKBlock.m"; path = "DKKit/Classes/Base/Foundation/NSDictionary+DKBlock.m"; sourceTree = "<group>"; };
 		A07556D8A0B9372C212B7D0AAC4E4DD1 /* Lookin_PTProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Lookin_PTProtocol.h; path = Src/Main/Shared/Peertalk/Lookin_PTProtocol.h; sourceTree = "<group>"; };
@@ -1124,6 +1125,7 @@
 		A9D279201BED7482463E4DA25D92515A /* SDDiskCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDDiskCache.h; path = SDWebImage/Core/SDDiskCache.h; sourceTree = "<group>"; };
 		ABB25F4C6D8AADCA8B05BC39B0E88CE6 /* DKSanboxBrowseDetailViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DKSanboxBrowseDetailViewController.h; sourceTree = "<group>"; };
 		ABCEEE1FB8276BF7506CD6DD323DB248 /* Lookin_PTPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Lookin_PTPrivate.h; path = Src/Main/Shared/Peertalk/Lookin_PTPrivate.h; sourceTree = "<group>"; };
+		ACDF7A7E2C2C08E30030530E /* DKSkynet+Server.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "DKSkynet+Server.m"; path = "DKSkynet/Classes/Core/DKSkynet+Server.m"; sourceTree = "<group>"; };
 		ACF4B4898489F055E5119B3AA98DF22F /* NSObject+Lookin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+Lookin.h"; path = "Src/Main/Shared/Category/NSObject+Lookin.h"; sourceTree = "<group>"; };
 		AD4A4D9924092FE5B599A5807BB55B90 /* UIImage+Metadata.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Metadata.h"; path = "SDWebImage/Core/UIImage+Metadata.h"; sourceTree = "<group>"; };
 		AD5B5ED770DB1510594EEC36C0E9C456 /* LKS_PerspectiveHierarchyView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKS_PerspectiveHierarchyView.h; path = Src/Main/Server/Perspective/LKS_PerspectiveHierarchyView.h; sourceTree = "<group>"; };
@@ -1139,7 +1141,7 @@
 		AFC0C8690CCC926126E22F9D2ABB2B57 /* DKKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DKKit-dummy.m"; sourceTree = "<group>"; };
 		B03862AB16FF40B295989755BBEF448C /* SDImageAPNGCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageAPNGCoder.h; path = SDWebImage/Core/SDImageAPNGCoder.h; sourceTree = "<group>"; };
 		B0B214D775196BA7CA8E17E53048A493 /* SDWebImage */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = SDWebImage; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0FF030F5DBA695C243DE13166F61D04 /* mtaf_time_utils.c */ = {isa = PBXFileReference; includeInIndex = 1; path = mtaf_time_utils.c; sourceTree = "<group>"; };
+		B0FF030F5DBA695C243DE13166F61D04 /* mtaf_time_utils.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = mtaf_time_utils.c; sourceTree = "<group>"; };
 		B14D87894D3CB6A503973924FEC724D4 /* LookinObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LookinObject.m; path = Src/Main/Shared/LookinObject.m; sourceTree = "<group>"; };
 		B1A5A3C28841FF70A86FDE2076C42567 /* LKS_Helper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKS_Helper.m; path = Src/Main/Server/Others/LKS_Helper.m; sourceTree = "<group>"; };
 		B1CA0A09FABB7055E3B150CDA30B5143 /* SDWebImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImage.h; path = WebImage/SDWebImage.h; sourceTree = "<group>"; };
@@ -1179,7 +1181,7 @@
 		C0C78541527DC907EA37E08398C7C94E /* UIColor+DKSanbox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+DKSanbox.h"; sourceTree = "<group>"; };
 		C14EB5F5D0E99F82F17A5ADAEEE527E5 /* Envs.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Envs.m; path = DKSkynet/Classes/EnvPlugins/Env/Envs.m; sourceTree = "<group>"; };
 		C28C7F6B41BFA5C47538129C6111B117 /* SDWebImageDownloaderRequestModifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderRequestModifier.m; path = SDWebImage/Core/SDWebImageDownloaderRequestModifier.m; sourceTree = "<group>"; };
-		C2F12D1807D1FF2599F9E71818D42637 /* mtaf_ptrbuffer.cc */ = {isa = PBXFileReference; includeInIndex = 1; path = mtaf_ptrbuffer.cc; sourceTree = "<group>"; };
+		C2F12D1807D1FF2599F9E71818D42637 /* mtaf_ptrbuffer.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = mtaf_ptrbuffer.cc; sourceTree = "<group>"; };
 		C37332E515F7107B64ECD170F2CF86E8 /* LookinTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LookinTuple.m; path = Src/Main/Shared/LookinTuple.m; sourceTree = "<group>"; };
 		C478521759B916ED57953A4578321BE0 /* DKMethodsHooking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DKMethodsHooking.m; path = DKKit/Classes/Utility/DKMethodsHooking.m; sourceTree = "<group>"; };
 		C4CAB6F1D8955E684CC0E07C114DD7AB /* NSObject+LookinServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+LookinServer.m"; path = "Src/Main/Server/Category/NSObject+LookinServer.m"; sourceTree = "<group>"; };
@@ -1272,7 +1274,7 @@
 		E46C38A9946891BFFDFD4B5EF5BFB286 /* NSDictionary+DKBlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+DKBlock.h"; path = "DKKit/Classes/Base/Foundation/NSDictionary+DKBlock.h"; sourceTree = "<group>"; };
 		E4AD793897E7EE52DFF6E45CC19D3BBC /* DKSkynetStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DKSkynetStorage.m; path = DKSkynet/Classes/Store/DKSkynetStorage.m; sourceTree = "<group>"; };
 		E4FC57AB8F7A5E3A01D8393385D752DB /* LookinAppInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LookinAppInfo.m; path = Src/Main/Shared/LookinAppInfo.m; sourceTree = "<group>"; };
-		E5391EA3C8CB63162CC4B22D8CC4E485 /* mtaf_platform_comm.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = mtaf_platform_comm.mm; sourceTree = "<group>"; };
+		E5391EA3C8CB63162CC4B22D8CC4E485 /* mtaf_platform_comm.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = mtaf_platform_comm.mm; sourceTree = "<group>"; };
 		E62A4426CB6030BE04AFEC1604DDB95B /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
 		E6B1BC6892D2DA7AD54497D0CC268C1C /* LKS_RequestHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKS_RequestHandler.m; path = Src/Main/Server/Connection/LKS_RequestHandler.m; sourceTree = "<group>"; };
 		E6B2EBA8337D65ECDE2EA7B8633B6B10 /* DKSkynet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DKSkynet.m; path = DKSkynet/Classes/Core/DKSkynet.m; sourceTree = "<group>"; };
@@ -1441,6 +1443,7 @@
 			children = (
 				829F3F36FBCB949DB1908ECD06FCA83F /* DKSkynet.h */,
 				E6B2EBA8337D65ECDE2EA7B8633B6B10 /* DKSkynet.m */,
+				ACDF7A7E2C2C08E30030530E /* DKSkynet+Server.m */,
 				E0A7410C69D97E29A1BE65580BF09902 /* DKSkynetAssistiveTouch.h */,
 				74C9020037FD495B1F6D4EBF02C14F7B /* DKSkynetAssistiveTouch.m */,
 				C65CB7B8AF5ACFD44A41427370F8D5DD /* DKSkynetItemView.h */,
@@ -1485,7 +1488,6 @@
 				08DBDBAE88C035CD8FCDDC6A5B0BC6C1 /* XFATViewController.h */,
 				8DCF67265E25E2C39FC16089684FB903 /* XFATViewController.m */,
 			);
-			name = XFAssistiveTouch;
 			path = XFAssistiveTouch;
 			sourceTree = "<group>";
 		};
@@ -1645,7 +1647,6 @@
 				C113986E3EE3D9E0315E85C3268B4321 /* Core */,
 				E59BF95E64E92357E0981924258F4C00 /* Support Files */,
 			);
-			name = LookinServer;
 			path = LookinServer;
 			sourceTree = "<group>";
 		};
@@ -2016,7 +2017,6 @@
 				857E87A77D896A0EBFB2193CAE4A12F2 /* Support Files */,
 				2FEAD7616A110D816118EE7456E3687B /* UIKit */,
 			);
-			name = AFNetworking;
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
@@ -2044,7 +2044,6 @@
 				7284542125092B41F957D9E923B68D15 /* Core */,
 				B99BBFAD21905271950D8DC380A6E9EA /* Support Files */,
 			);
-			name = SDWebImage;
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
@@ -2340,7 +2339,6 @@
 				A028C4C7034B0595C8041BB719A5CA0A /* DKStackBacktrack */,
 				A5D2A837CBE1A907F74A7666CCE64BD1 /* Support Files */,
 			);
-			name = DKMonitor;
 			path = DKMonitor;
 			sourceTree = "<group>";
 		};
@@ -2413,7 +2411,6 @@
 				D68337CD9225DBB39997A8436BAAA926 /* UIView+DKUtils.m */,
 				8837A64A05D34A2BC1BC423D32FBDFBF /* Support Files */,
 			);
-			name = DKKit;
 			path = DKKit;
 			sourceTree = "<group>";
 		};
@@ -3295,6 +3292,7 @@
 				F8B52847BF58B6A4613E287B04F778A7 /* DKSkynet.m in Sources */,
 				4C48C9B3932FDF6663BC3CD4439671D2 /* DKSkynet-dummy.m in Sources */,
 				5171175BC281D29AAE077AEBD6C389BD /* DKSkynetAssistiveTouch.m in Sources */,
+				ACDF7A802C2C08E30030530E /* DKSkynet+Server.m in Sources */,
 				543EBE84627E6E0D77621E0537F33EF1 /* DKSkynetDatasInfoPlugins.m in Sources */,
 				CD03624C5712423F2AD6E7051682FB52 /* DKSkynetEnvPlugins.m in Sources */,
 				BF666D356CAF1BA232256DB9B0401C0A /* DKSkynetItemView.m in Sources */,
